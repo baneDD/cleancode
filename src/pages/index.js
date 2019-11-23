@@ -16,13 +16,13 @@ const Page = styled.div`
 
 const Heading = styled.h1`
   font-size: 24px;
-  color: #555;
+  color: #fff;
   margin-top: 60px;
 `;
 
 const Label = styled.p`
   font-size: 14px;
-  color: #aaa;
+  color: #ccc;
   margin-top: 12px;
   letter-spacing: 10px;
   text-transform: uppercase;
