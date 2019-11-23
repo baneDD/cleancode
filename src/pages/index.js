@@ -31,9 +31,9 @@ const Label = styled.p`
 const IndexPage = () => (
   <Layout>
     <Page>
-      <Image />
-      <Heading>GatsbyJS + Storybook</Heading>
-      <Label>Starter</Label>
+      {/* <Image /> */}
+      <Heading>Bane Debeljević</Heading>
+      <Label>Developer &bull; Architect &bull; Leader</Label>
     </Page>
   </Layout>
 );
