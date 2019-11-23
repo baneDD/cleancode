@@ -14,7 +14,8 @@ module.exports = {
         display: 'standalone',
         icon: 'src/assets/logos/icon.png',
       },
-    }, {
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/`,
@@ -27,5 +28,6 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     'gatsby-plugin-styled-components',
+    'gatsby-plugin-netlify-cms',
   ],
 };
