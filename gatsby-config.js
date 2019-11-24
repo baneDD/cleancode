@@ -22,6 +22,13 @@ module.exports = {
         name: 'src',
       },
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'pages',
+        path: `${__dirname}/content`,
+      },
+    },
     'gatsby-plugin-root-import',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-offline',
