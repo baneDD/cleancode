@@ -34,6 +34,26 @@ const PageTemplate = ({ data }) => {
       color: #333;
     }
 
+    h2 {
+      font-size: 16px;
+      color: #333;
+      text-transform: uppercase;
+      margin-top: 30px;
+    }
+
+    ul {
+      margin-top: 30px;
+
+      li {
+        line-height: 24px;
+
+        a {
+          color: #000;
+          text-decoration: underline;
+        }
+      }
+    }
+
     p {
       margin-top: 30px;
       font-size: 14px;

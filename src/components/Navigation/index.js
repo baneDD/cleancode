@@ -22,10 +22,10 @@ const NavMenu = () => {
             <MenuLink href="/about">About</MenuLink>
           </MenuItem>
           <MenuItem>
-            <MenuLink href="/">Blog</MenuLink>
+            <MenuLink href="/blog">Blog</MenuLink>
           </MenuItem>
           <MenuItem>
-            <MenuLink href="/">Contact</MenuLink>
+            <MenuLink href="/contact">Contact</MenuLink>
           </MenuItem>
         </MenuList>
       </MenuListContainer>
