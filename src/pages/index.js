@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Layout from '../global/Layout';
-import Image from '../components/Image';
+import Navigation from '../components/Navigation';
 
 const Page = styled.div`
   width: 100%;
@@ -31,7 +31,7 @@ const Label = styled.p`
 const IndexPage = () => (
   <Layout>
     <Page>
-      {/* <Image /> */}
+      <Navigation />
       <Heading>Bane Debeljević</Heading>
       <Label>Developer &bull; Architect &bull; Leader</Label>
     </Page>
