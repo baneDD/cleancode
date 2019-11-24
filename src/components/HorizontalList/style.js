@@ -35,7 +35,7 @@ export const Item = styled.li`
     }
   }
 
-  @media all and (max-width: 1200px) {
+  @media all and (max-width: 650px) {
     float: initial;
     margin-left: 0px;
     margin-top: 10px;
