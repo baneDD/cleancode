@@ -1,13 +1,17 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  border: 1px solid red;
+  width: 32px;
+  height: 24px;
+
   span:nth-of-type(3) {
     margin-bottom: 0px;
   }
 
   &.open {
     span:first-of-type {
-      transform: rotate(45deg) translate(2px, 0px);
+      transform: rotate(45deg) translate(2px, 0.5px);
     }
 
     span:nth-of-type(2) {
