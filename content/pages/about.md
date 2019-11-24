@@ -1,14 +1,13 @@
 ---
 title: 'About me'
 template: 'page'
-socialImage: '/media/image-2.jpg'
 slug: '/about/'
 ---
 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+I'm a web developer based out of Toronto focused on engaging, fun and innovative online experiences. Dedicated to crafting clean, readable, modular and performant code. While I can work solo, I thrive in team environments where I can make a contribution beyond just writing code. Working on system architecture, improving processes and mentoring and coaching more junior engineers is an enormously satisfying part of working within a team constuct. I love to learn new things and continuously improve my craft.
 
-![Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.](/media/image-2.jpg)
+I’ve worked with major online retailers in North America including leading teams at Indigo and iHerb and helped improve web experience for one of the most popular online video games on the planet. Starting at Ryerson University where I won a contest to redesign and implement a portal for School of Computer Science, I’ve spent nearly a decade and a half mastering the craft of creating joyful online experiences.
 
-_Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi._
+If you want to work with me or simply want to get in touch and learn more, please [email me](mailto:bane.dd@gmail.com).
 
-Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+Bane Debeljević

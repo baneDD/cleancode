@@ -38,6 +38,11 @@ const PageTemplate = ({ data }) => {
       margin-top: 30px;
       font-size: 14px;
       color: #666;
+
+      a {
+        color: #000;
+        text-decoration: underline;
+      }
     }
   `;
 
