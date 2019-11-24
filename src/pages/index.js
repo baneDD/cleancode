@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import Layout from '../global/Layout';
 import Navigation from '../components/Navigation';
+import HorizontalList from '../components/HorizontalList';
 
 const Page = styled.div`
   width: 100%;
@@ -20,20 +21,12 @@ const Heading = styled.h1`
   margin-top: 60px;
 `;
 
-const Label = styled.p`
-  font-size: 14px;
-  color: #999;
-  margin-top: 12px;
-  letter-spacing: 10px;
-  text-transform: uppercase;
-`;
-
 const IndexPage = () => (
   <Layout>
     <Page>
       <Navigation />
       <Heading>Bane Debeljević</Heading>
-      <Label>Developer &bull; Architect &bull; Leader</Label>
+      <HorizontalList items={['Developer', 'Architect', 'Leader']} />
     </Page>
   </Layout>
 );
