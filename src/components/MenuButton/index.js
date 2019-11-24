@@ -6,6 +6,7 @@ const MenuButton = ({ className, onClickHandler }) => (
     <Slat />
     <Slat />
     <Slat />
+    <Slat />
   </Container>
 );
 

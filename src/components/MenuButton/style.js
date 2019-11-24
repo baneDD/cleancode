@@ -1,12 +1,23 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  border: 1px solid red;
-  width: 32px;
-  height: 24px;
+  position: relative;
 
+  // This is the last visible item
+  // so we remove the bottom margin
   span:nth-of-type(3) {
     margin-bottom: 0px;
+  }
+
+  // Phantom span used to define the
+  // clickable area for the menu button
+  span:nth-of-type(4) {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 30px;
+    height: 22px;
+    opacity: 0;
   }
 
   &.open {
@@ -15,11 +26,17 @@ export const Container = styled.div`
     }
 
     span:nth-of-type(2) {
+      transition: width 0.55s;
+      width: 23px;
       opacity: 0;
     }
 
     span:nth-of-type(3) {
       transform: rotate(-45deg) translate(-1px, -2px);
+    }
+
+    span:nth-of-type(4) {
+      width: 23px;
     }
   }
 `;
