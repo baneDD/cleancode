@@ -1,7 +1,25 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+exports.createPages = async function ({ actions, graphql }) {
+  const { data } = await graphql(`
+    query {
+      allMarkdownRemark {
+        edges {
+          node {
+            frontmatter {
+              slug
+              template
+            }
+          }
+        }
+      }
+    }
+  `);
 
-// You can delete this file if you're not using it
+  data.allMarkdownRemark.edges.forEach((edge) => {
+    const { slug, template } = edge.node.frontmatter;
+    actions.createPage({
+      path: slug,
+      component: require.resolve(`./src/templates/${template}-template.js`),
+      context: { slug },
+    });
+  });
+};
