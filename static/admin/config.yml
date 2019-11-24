@@ -1,7 +1,8 @@
 backend:
-  name: git-gateway
+  name: "test-repo" # git-gateway
   branch: master
 
+# publish_mode: editorial_workflow
 media_folder: "static/media"
 public_folder: "/media"
 
