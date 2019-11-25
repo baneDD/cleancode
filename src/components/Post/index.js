@@ -17,7 +17,7 @@ const Post = ({ post }) => {
 
   return (
     <Wrapper>
-      <Link to="/blog">All Articles</Link>
+      <Link to="/posts">All Posts</Link>
       <div>
         <Content body={html} title={title} />
       </div>

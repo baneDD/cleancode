@@ -11,3 +11,5 @@ I’ve worked with major online retailers in North America including leading tea
 If you want to work with me or simply want to get in touch and learn more, please [email me](mailto:bane.dd@gmail.com).
 
 Bane Debeljević
+
+![Toronto Skyline At Night - ](/media/toronto.jpg)
