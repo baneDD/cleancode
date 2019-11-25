@@ -46,4 +46,8 @@ export default createGlobalStyle`
     text-decoration: none;
     border-bottom: 1px solid ${BLACK}
   }
+
+  img {
+    max-width: 100%;
+  }
 `;
