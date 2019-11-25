@@ -37,7 +37,7 @@ export const MenuList = styled.ul`
   top: -40px;
   left: -40px;
   padding: 40px 40px 18px 40px;
-  padding-top: 85px;
+  padding-top: 50px;
 
   list-style-type: none;
 
