@@ -1,13 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Storybook Starter',
+    title: 'CleanCode.ca - Bane Debeljević',
   },
   plugins: [
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Gatsby Storybook Starter',
-        short_name: 'Gatsby Storybook Starter',
+        name: 'CleanCode.ca - Bane Debeljević',
+        short_name: 'CleanCode.ca - Bane Debeljević',
         start_url: '/',
         background_color: '#ffffff',
         theme_color: '#744C9E',
