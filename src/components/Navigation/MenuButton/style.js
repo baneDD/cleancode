@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { LIGHT_GREY } from '../../../global/Theme';
 
 export const Container = styled.div`
   position: relative;
@@ -49,7 +50,7 @@ export const Slat = styled.span`
   height: 4px;
   margin-bottom: 5px;
 
-  background: #999;
+  background: ${LIGHT_GREY};
   border-radius: 3px;
 
   z-index: 1;

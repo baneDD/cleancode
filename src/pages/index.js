@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Layout from '../global/Layout';
 import Navigation from '../components/Navigation';
 import HorizontalList from '../components/HorizontalList';
+import { DARK_GREY } from '../global/Theme';
 
 const Page = styled.div`
   width: 100%;
@@ -17,7 +18,7 @@ const Page = styled.div`
 
 const Heading = styled.h1`
   font-size: 24px;
-  color: #333;
+  color: ${DARK_GREY};
   margin-top: 60px;
 `;
 

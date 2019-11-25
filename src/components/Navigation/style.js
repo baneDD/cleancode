@@ -1,13 +1,14 @@
 import styled from 'styled-components';
+import { LIGHT_GREY, DARK_GREY, WHITE } from '../../global/Theme';
 
 export const MenuLink = styled.a`
   text-decoration: none;
-  color: #999;
+  color: ${LIGHT_GREY};
 
   transition: color 0.3s ease;
 
   &:hover {
-    color: #333;
+    color: ${DARK_GREY};
   }
 `;
 
@@ -20,6 +21,10 @@ export const MenuListContainer = styled.div`
   z-index: 1;
 
   user-select: none;
+
+  a {
+    border-bottom: none;
+  }
 
   @media all and (max-width: 650px) {
     top: 20px;
@@ -51,10 +56,10 @@ export const MenuList = styled.ul`
       left: -16px;
       padding: 16px;
       padding-top: 55px;
-      background-color: #fff;
+      background-color: ${WHITE};
 
       a {
-        color: #333;
+        color: ${DARK_GREY};
       }
     }
   }

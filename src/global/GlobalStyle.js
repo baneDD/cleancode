@@ -1,6 +1,7 @@
 /* eslint-disable max-len */
 import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset-advanced';
+import { MEDIUM_GREY, BLACK } from './Theme';
 
 export default createGlobalStyle`
   ${reset};
@@ -10,6 +11,7 @@ export default createGlobalStyle`
   body {
     font-family: 'Anonymous Pro','Menlo','Monaco','Lucida Console','Liberation Mono','DejaVu Sans Mono','Bitstream Vera Sans Mono','Courier New',monospace;
     font-weight: 500;
+    color: ${BLACK};
   }
 
   h1,h2,h3,h4,h5,h6,ul,p {
@@ -18,12 +20,12 @@ export default createGlobalStyle`
 
   h1 {
     font-size: 20px;
-    color: #333;
+    color: ${MEDIUM_GREY};
   }
 
   h2 {
     font-size: 16px;
-    color: #333;
+    color: ${MEDIUM_GREY};
     text-transform: uppercase;
   }
 
@@ -35,12 +37,13 @@ export default createGlobalStyle`
   }
 
   p {
+    line-height: 1.5em;
     font-size: 14px;
-    color: #666;
   }
 
   a {
-    color: #000;
-    text-decoration: underline;
+    line-height: 1.5em;
+    text-decoration: none;
+    border-bottom: 1px solid ${BLACK}
   }
 `;

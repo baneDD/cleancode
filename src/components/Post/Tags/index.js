@@ -1,17 +1,18 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import { Container, TagList, Tag } from './style';
 
 const Tags = ({ tags }) => (
-  <div>
-    <ul>
+  <Container>
+    <TagList>
       {tags
         && tags.map((tag) => (
-          <li key={tag}>
+          <Tag key={tag}>
             <Link to={`/tag/${tag}`}>{tag}</Link>
-          </li>
+          </Tag>
         ))}
-    </ul>
-  </div>
+    </TagList>
+  </Container>
 );
 
 export default Tags;

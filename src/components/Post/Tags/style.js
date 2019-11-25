@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { LIGHT_GREY } from '../../global/Theme';
+import { LIGHT_GREY } from '../../../global/Theme';
 
 export const Container = styled.div`
   display: table; /* Allow the centering to work */
@@ -7,18 +7,23 @@ export const Container = styled.div`
   font-size: 14px;
   color: ${LIGHT_GREY};
   margin-top: 12px;
-  letter-spacing: 10px;
   text-transform: uppercase;
+
+  a {
+    text-decoration: none;
+    border-bottom: 1px solid ${LIGHT_GREY};
+    color: ${LIGHT_GREY};
+  }
 `;
 
-export const ItemList = styled.ul`
+export const TagList = styled.ul`
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
 `;
 
-export const Item = styled.li`
+export const Tag = styled.li`
   float: left;
   margin-left: 20px;
 
