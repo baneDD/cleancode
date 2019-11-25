@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSiteMetadata } from '../../../hooks';
-import { Container, Bio, Twitter } from './style'
-;
+import { Container, Bio, Twitter } from './style';
+
 const Author = () => {
   const { author } = useSiteMetadata();
 
