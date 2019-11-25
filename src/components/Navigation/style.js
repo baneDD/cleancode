@@ -38,6 +38,9 @@ export const MenuList = styled.ul`
   left: -40px;
   padding: 40px 40px 18px 40px;
   padding-top: 50px;
+  background-color: ${WHITE};
+  opacity: 0.9;
+  border-radius: 18px;
 
   list-style-type: none;
 
@@ -48,15 +51,12 @@ export const MenuList = styled.ul`
 
   &.open {
     transform: none;
-    opacity: 0.9;
-    border-radius: 18px;
 
     @media all and (max-width: 650px) {
       top: -16px;
       left: -16px;
       padding: 16px;
       padding-top: 55px;
-      background-color: ${WHITE};
 
       a {
         color: ${DARK_GREY};
