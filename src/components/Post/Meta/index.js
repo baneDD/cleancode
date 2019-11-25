@@ -1,4 +1,5 @@
 import React from 'react';
+import { Container, MetaParagraph } from './style';
 
 const options = {
   weekday: 'long',
@@ -8,13 +9,13 @@ const options = {
 };
 
 const Meta = ({ date }) => (
-  <div>
-    <p>
+  <Container>
+    <MetaParagraph>
       {`Published ${new Intl.DateTimeFormat('en-US', options).format(
         Date.parse(date)
       )}`}
-    </p>
-  </div>
+    </MetaParagraph>
+  </Container>
 );
 
 export default Meta;
