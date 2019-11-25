@@ -1,16 +1,17 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../global/Layout';
+import Post from '../components/Post';
 
 const PostTemplate = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
-  const {
-    title: postTitle,
-    description: postDescription,
-    socialImage,
-  } = frontmatter;
+  const { title, description } = frontmatter;
 
-  return <Layout />;
+  return (
+    <Layout title={title} description={description}>
+      <Post post={data.markdownRemark} />
+    </Layout>
+  );
 };
 
 export const query = graphql`

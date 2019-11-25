@@ -1,6 +1,20 @@
 module.exports = {
   siteMetadata: {
     title: 'CleanCode.ca - Bane Debeljević',
+    url: 'https://cleancode.ca',
+    description: "CleanCode.ca - Bane Debeljević's Personal Website",
+    author: {
+      name: 'Bane Debeljević',
+      bio: 'Developer • Architect • Leader',
+      contacts: {
+        twitter: '',
+        linkedin: '',
+        github: '',
+        codepen: '',
+        codesandbox: '',
+      },
+    },
+    disqusShortname: '',
   },
   plugins: [
     {

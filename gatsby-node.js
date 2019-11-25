@@ -1,4 +1,4 @@
-exports.createPages = async function ({ actions, graphql }) {
+exports.createPages = async ({ actions, graphql }) => {
   const { data } = await graphql(`
     query {
       allMarkdownRemark {

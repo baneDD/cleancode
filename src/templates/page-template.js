@@ -6,21 +6,9 @@ import Navigation from '../components/Navigation';
 import Page from '../components/Page';
 
 const PageTemplate = ({ data }) => {
-  //   const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
   const { html: pageBody } = data.markdownRemark;
   const { frontmatter } = data.markdownRemark;
-  const {
-    title: pageTitle,
-    // description: pageDescription,
-    // socialImage,
-  } = frontmatter;
-  //   const metaDescription =    pageDescription !== null ? pageDescription : siteSubtitle;
-
-  /* <Layout
-      title={`${pageTitle} - ${siteTitle}`}
-      description={metaDescription}
-      socialImage={socialImage}
-    > */
+  const { title, description } = frontmatter;
 
   const Container = styled.div`
     margin: 50px 200px;
@@ -28,51 +16,15 @@ const PageTemplate = ({ data }) => {
     @media all and (max-width: 650px) {
       margin: 70px 20px;
     }
-
-    h1 {
-      font-size: 20px;
-      color: #333;
-    }
-
-    h2 {
-      font-size: 16px;
-      color: #333;
-      text-transform: uppercase;
-      margin-top: 30px;
-    }
-
-    ul {
-      margin-top: 30px;
-
-      li {
-        line-height: 24px;
-
-        a {
-          color: #000;
-          text-decoration: underline;
-        }
-      }
-    }
-
-    p {
-      margin-top: 30px;
-      font-size: 14px;
-      color: #666;
-
-      a {
-        color: #000;
-        text-decoration: underline;
-      }
-    }
-  `;
+  }`;
 
   const InnerHtml = styled.section``;
 
   return (
-    <Layout>
+    <Layout title={title} description={description}>
       <Navigation />
       <Container>
-        <Page title={pageTitle}>
+        <Page title={title}>
           <InnerHtml dangerouslySetInnerHTML={{ __html: pageBody }} />
         </Page>
       </Container>

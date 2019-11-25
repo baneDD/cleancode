@@ -5,13 +5,14 @@ import { StaticQuery, graphql } from 'gatsby';
 
 import GlobalStyle from './GlobalStyle';
 
-const Layout = ({ children }) => (
+const Layout = ({ title, description, children }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
         site {
           siteMetadata {
             title
+            description
           }
         }
       }
@@ -19,7 +20,11 @@ const Layout = ({ children }) => (
     render={(data) => (
       <>
         <Helmet>
-          <title>{data.site.siteMetadata.title}</title>
+          <title>{title || data.site.siteMetadata.title}</title>
+          <meta
+            name="description"
+            content={description || data.site.siteMetadata.description}
+          />
           <meta
             name="apple-mobile-web-app-status-bar-style"
             content="default"

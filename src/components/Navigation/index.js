@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import MenuButton from '../MenuButton';
+import MenuButton from './MenuButton';
 import { MenuLink, MenuItem, MenuList, MenuListContainer } from './style';
 
 const NavMenu = () => {
