@@ -9,6 +9,7 @@ export const MenuLink = styled.a`
 
   &:hover {
     color: ${DARK_GREY};
+    letter-spacing: 1px;
   }
 `;
 
