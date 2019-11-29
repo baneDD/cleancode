@@ -11,7 +11,7 @@ const PageTemplate = ({ data }) => {
   const { title, description } = frontmatter;
 
   const Container = styled.div`
-    margin: 50px 100px;
+    margin: 100px 50px 50px;
 
     @media all and (max-width: 650px) {
       margin: 70px 20px;

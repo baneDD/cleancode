@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../global/Layout';
 import Post from '../components/Post';
+import Navigation from '../components/Navigation';
 
 const PostTemplate = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
@@ -9,6 +10,7 @@ const PostTemplate = ({ data }) => {
 
   return (
     <Layout title={title} description={description}>
+      <Navigation />
       <Post post={data.markdownRemark} />
     </Layout>
   );

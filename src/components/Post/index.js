@@ -8,7 +8,7 @@ import Meta from './Meta';
 import Tags from './Tags';
 
 const Wrapper = styled.div`
-  margin: 50px;
+  margin: 100px 50px 50px;
 `;
 
 const Post = ({ post }) => {
@@ -17,10 +17,7 @@ const Post = ({ post }) => {
 
   return (
     <Wrapper>
-      <Link to="/posts">All Posts</Link>
-      <div>
-        <Content body={html} title={title} />
-      </div>
+      <Content body={html} title={title} />
       <div>
         <Meta date={date} />
         {tags && <Tags tags={tags} />}
