@@ -1,14 +1,34 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import MenuButton from './MenuButton';
 import { MenuLink, MenuItem, MenuList, MenuListContainer } from './style';
 
 const NavMenu = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const node = useRef();
+
   const onClickHandler = () => setMenuOpen((old) => !old);
   const getClassName = () => (menuOpen ? 'open' : '');
 
+  const handleClickOutside = (e) => {
+    if (!node.current.contains(e.target)) {
+      setMenuOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    if (menuOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    } else {
+      document.removeEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [menuOpen]);
+
   return (
-    <nav role="navigation">
+    <nav ref={node} role="navigation">
       <MenuListContainer>
         <MenuButton
           className={getClassName()}
