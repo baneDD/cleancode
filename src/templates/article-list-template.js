@@ -1,8 +1,7 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { Link, navigate } from 'gatsby';
 import { TagCloud } from 'react-tagcloud';
 import styled from 'styled-components';
-import { navigate } from '@reach/router';
 import readingTime from 'reading-time';
 import _ from 'lodash';
 import Layout from '../global/Layout';
