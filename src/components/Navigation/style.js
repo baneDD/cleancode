@@ -1,7 +1,8 @@
 import styled from 'styled-components';
+import { Link } from 'gatsby';
 import { LIGHT_GREY, DARK_GREY, WHITE } from '../../global/Theme';
 
-export const MenuLink = styled.a`
+export const MenuLink = styled(Link)`
   text-decoration: none;
   color: ${LIGHT_GREY};
 

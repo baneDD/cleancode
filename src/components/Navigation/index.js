@@ -16,16 +16,16 @@ const NavMenu = () => {
         />
         <MenuList className={getClassName()}>
           <MenuItem>
-            <MenuLink href="/">Home</MenuLink>
+            <MenuLink to="/">Home</MenuLink>
           </MenuItem>
           <MenuItem>
-            <MenuLink href="/about">About</MenuLink>
+            <MenuLink to="/about">About</MenuLink>
           </MenuItem>
           <MenuItem>
-            <MenuLink href="/posts">Posts</MenuLink>
+            <MenuLink to="/posts">Posts</MenuLink>
           </MenuItem>
           <MenuItem>
-            <MenuLink href="/contact">Contact</MenuLink>
+            <MenuLink to="/contact">Contact</MenuLink>
           </MenuItem>
         </MenuList>
       </MenuListContainer>
