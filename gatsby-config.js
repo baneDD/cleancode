@@ -15,6 +15,7 @@ module.exports = {
       },
     },
     disqusShortname: '',
+    postsPerPage: 10,
   },
   plugins: [
     {

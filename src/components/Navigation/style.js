@@ -54,7 +54,7 @@ export const MenuList = styled.ul`
     transform: none;
 
     @media all and (max-width: 650px) {
-      top: -16px;
+      top: -56px;
       left: -16px;
       padding: 16px;
       padding-top: 55px;

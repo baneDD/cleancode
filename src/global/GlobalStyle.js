@@ -1,16 +1,16 @@
 /* eslint-disable max-len */
-import { createGlobalStyle } from 'styled-components';
-import reset from 'styled-reset-advanced';
-import { MEDIUM_GREY, BLACK } from './Theme';
+import { createGlobalStyle } from 'styled-components'
+import reset from 'styled-reset-advanced'
+import { MEDIUM_GREY, BLACK } from './Theme'
 
 export default createGlobalStyle`
   ${reset};
 
   @import url('https://fonts.googleapis.com/css?family=Anonymous+Pro&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Oxygen&display=swap');
 
   body {
-    font-family: 'Anonymous Pro','Menlo','Monaco','Lucida Console','Liberation Mono','DejaVu Sans Mono','Bitstream Vera Sans Mono','Courier New',monospace;
-    font-weight: 500;
+    font-family: 'Oxygen', sans-serif;
     color: ${BLACK};
   }
 
@@ -44,10 +44,10 @@ export default createGlobalStyle`
   a {
     line-height: 1.5em;
     text-decoration: none;
-    border-bottom: 1px solid ${BLACK}
+    border-bottom: 2px solid #3498DB;
   }
 
   img {
     max-width: 100%;
   }
-`;
+`

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import _ from 'lodash';
 import { Container, TagList, Tag } from './style';
 
 const Tags = ({ tags }) => (
@@ -8,7 +9,7 @@ const Tags = ({ tags }) => (
       {tags
         && tags.map((tag) => (
           <Tag key={tag}>
-            <Link to={`/tag/${tag}`}>{tag}</Link>
+            <Link to={`/tag/${_.kebabCase(tag)}`}>{tag}</Link>
           </Tag>
         ))}
     </TagList>
