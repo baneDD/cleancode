@@ -53,6 +53,7 @@ module.exports = {
             resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 1500,
+              withWebp: true,
             },
           },
           {
@@ -79,11 +80,11 @@ module.exports = {
         ],
       },
     },
+    'gatsby-plugin-sharp',
     'gatsby-plugin-root-import',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-offline',
     'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
     'gatsby-plugin-styled-components',
     'gatsby-plugin-netlify-cms',
     'gatsby-plugin-lodash',
