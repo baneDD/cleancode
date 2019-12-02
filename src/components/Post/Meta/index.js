@@ -1,21 +1,12 @@
 import React from 'react';
-import { Container, MetaParagraph } from './style';
+import readingTime from 'reading-time';
+import { formatDate } from '../../../utils';
 
-const options = {
-  weekday: 'long',
-  year: 'numeric',
-  month: 'long',
-  day: 'numeric',
-};
-
-const Meta = ({ date }) => (
-  <Container>
-    <MetaParagraph>
-      {`Published ${new Intl.DateTimeFormat('en-US', options).format(
-        Date.parse(date)
-      )}`}
-    </MetaParagraph>
-  </Container>
+const Meta = ({ node }) => (
+  <>
+    {formatDate(node.frontmatter.date)}
+    {node.html && ` · ${readingTime(node.html).text}`}
+  </>
 );
 
 export default Meta;
