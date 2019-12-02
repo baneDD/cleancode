@@ -38,7 +38,7 @@ const StyledPostWrapper = styled.li`
 const StyledPostDescriptionWrapper = styled.div`
   position: absolute;
   width: 100%;
-  bottom: 5px;
+  bottom: 0px;
   left: 0px;
   padding: 10px;
   background: rgba(0, 0, 0, 0.6);
