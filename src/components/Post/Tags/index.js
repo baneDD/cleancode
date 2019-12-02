@@ -1,19 +1,25 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { navigate } from 'gatsby';
 import _ from 'lodash';
-import { Container, TagList, Tag } from './style';
+import StyledTagCloud from './style';
+
+const tagCloudColorOptions = {
+  luminosity: 'light',
+  hue: 'green',
+};
 
 const Tags = ({ tags }) => (
-  <Container>
-    <TagList>
-      {tags
-        && tags.map((tag) => (
-          <Tag key={tag}>
-            <Link to={`/tag/${_.kebabCase(tag)}`}>{tag}</Link>
-          </Tag>
-        ))}
-    </TagList>
-  </Container>
+  <StyledTagCloud
+    minSize={16}
+    maxSize={32}
+    colorOptions={tagCloudColorOptions}
+    tags={tags}
+    className="simple-cloud"
+    style={{
+      cursor: 'pointer',
+    }}
+    onClick={(tag) => navigate(`/tag/${_.kebabCase(tag.value)}`)}
+  />
 );
 
 export default Tags;

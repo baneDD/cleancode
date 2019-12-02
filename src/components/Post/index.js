@@ -22,8 +22,8 @@ const Post = ({ post }) => {
         <Meta node={post} textColor="#7f7f7f" />
       </StyledMeta>
       <Content body={html} />
-      <div>
-        {tags && <Tags tags={tags} />}
+      <div style={{ marginTop: '30px' }}>
+        {tags && <Tags tags={tags.map((tag) => ({ value: tag, count: 1 }))} />}
         <Author />
       </div>
       <div>
