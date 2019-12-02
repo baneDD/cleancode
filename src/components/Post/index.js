@@ -23,7 +23,13 @@ const Post = ({ post }) => {
       </StyledMeta>
       <Content body={html} />
       <div style={{ marginTop: '30px' }}>
-        {tags && <Tags tags={tags.map((tag) => ({ value: tag, count: 1 }))} />}
+        {tags && (
+          <Tags
+            tags={tags.map((tag) => ({ value: tag, count: 1 }))}
+            minSize={16}
+            maxSize={16}
+          />
+        )}
         <Author />
       </div>
       <div>

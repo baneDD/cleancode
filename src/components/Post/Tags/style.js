@@ -7,7 +7,7 @@ const StyledTagCloud = styled(TagCloud)`
   border-radius: 10px;
   text-align: center;
 
-  .simple-cloud .tag-cloud-tag {
+  &.simple-cloud .tag-cloud-tag {
     cursor: pointer;
   }
 `;

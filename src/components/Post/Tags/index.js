@@ -8,16 +8,13 @@ const tagCloudColorOptions = {
   hue: 'green',
 };
 
-const Tags = ({ tags }) => (
+const Tags = ({ tags, minSize, maxSize, options }) => (
   <StyledTagCloud
-    minSize={16}
-    maxSize={32}
-    colorOptions={tagCloudColorOptions}
+    minSize={minSize || 16}
+    maxSize={maxSize || 32}
+    colorOptions={options || tagCloudColorOptions}
     tags={tags}
     className="simple-cloud"
-    style={{
-      cursor: 'pointer',
-    }}
     onClick={(tag) => navigate(`/tag/${_.kebabCase(tag.value)}`)}
   />
 );
