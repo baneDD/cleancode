@@ -42,7 +42,7 @@ export const MenuList = styled.ul`
   padding-top: 50px;
   background-color: ${WHITE};
   opacity: 0.9;
-  border-radius: 18px;
+  border-radius: 10px;
 
   list-style-type: none;
 
