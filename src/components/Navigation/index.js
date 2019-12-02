@@ -15,15 +15,24 @@ const NavMenu = () => {
     }
   };
 
+  const handleEscKey = (e) => {
+    if (e.keyCode === 27) {
+      setMenuOpen(false);
+    }
+  };
+
   useEffect(() => {
     if (menuOpen) {
       document.addEventListener('mousedown', handleClickOutside);
+      document.addEventListener('keydown', handleEscKey);
     } else {
       document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('keydown', handleEscKey);
     }
 
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('keydown', handleEscKey);
     };
   }, [menuOpen]);
 
