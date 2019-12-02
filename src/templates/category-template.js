@@ -1,10 +1,10 @@
-import React from 'react';
-import { graphql } from 'gatsby';
-import ArticleList from './article-list-template';
+import React from 'react'
+import { graphql } from 'gatsby'
+import ArticleList from './article-list-template'
 
 const CategoryTemplate = ({ data, pageContext }) => {
-  const { category } = pageContext;
-  const pageTitle = `posts on "${category}"`;
+  const { category } = pageContext
+  const pageTitle = `posts on "${category}"`
 
   return (
     <ArticleList
@@ -13,8 +13,8 @@ const CategoryTemplate = ({ data, pageContext }) => {
       pageTitle={pageTitle}
       pageDescription={pageTitle}
     />
-  );
-};
+  )
+}
 
 export const query = graphql`
   query CategoryPage($category: String, $postsLimit: Int!, $postsOffset: Int!) {
@@ -43,7 +43,7 @@ export const query = graphql`
             title
             socialImage {
               childImageSharp {
-                fluid(maxWidth: 1500) {
+                fluid(maxWidth: 1600) {
                   ...GatsbyImageSharpFluid_withWebp_noBase64
                 }
               }
@@ -53,6 +53,6 @@ export const query = graphql`
       }
     }
   }
-`;
+`
 
-export default CategoryTemplate;
+export default CategoryTemplate
