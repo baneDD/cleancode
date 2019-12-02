@@ -33,8 +33,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/src/`,
-        name: 'src',
+        path: `${__dirname}/static/media`,
+        name: 'media',
       },
     },
     {
@@ -47,7 +47,36 @@ module.exports = {
     {
       resolve: 'gatsby-transformer-remark',
       options: {
-        plugins: [],
+        plugins: [
+          'gatsby-remark-relative-images',
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 1500,
+            },
+          },
+          {
+            resolve: 'gatsby-remark-responsive-iframe',
+            options: {
+              wrapperStyle: 'margin-bottom: 1.0725rem',
+            },
+          },
+
+          'gatsby-remark-prismjs',
+          {
+            resolve: 'gatsby-remark-copy-linked-files',
+            options: {
+              destinationDir: `${__dirname}/static`,
+            },
+          },
+          {
+            resolve: 'gatsby-remark-copy-linked-files',
+            options: {
+              destinationDir: `${__dirname}/static`,
+            },
+          },
+          'gatsby-remark-smartypants',
+        ],
       },
     },
     'gatsby-plugin-root-import',

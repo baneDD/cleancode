@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, navigate } from 'gatsby';
+import Img from 'gatsby-image';
 import { TagCloud } from 'react-tagcloud';
 import styled from 'styled-components';
 import readingTime from 'reading-time';
@@ -123,8 +124,13 @@ const ArticleList = ({ data, pageContext, pageTitle, pageDescription }) => {
 
             return (
               <StyledPostWrapper key={edge.node.frontmatter.title}>
-                <StyledPostLink to={`/posts/${edge.node.fields.slug}/`}>
-                  <img src={edge.node.frontmatter.socialImage} alt="blah" />
+                <StyledPostLink to={`/posts/${edge.node.frontmatter.slug}/`}>
+                  <Img
+                    fluid={
+                      edge.node.frontmatter.socialImage.childImageSharp.fluid
+                    }
+                    alt="blah"
+                  />
                   <StyledPostDescriptionWrapper>
                     {`${edge.node.frontmatter.title}`}
 

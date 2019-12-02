@@ -25,7 +25,13 @@ export const query = graphql`
         description
         tags
         title
-        socialImage
+        socialImage {
+          childImageSharp {
+            fluid(maxWidth: 1500) {
+              ...GatsbyImageSharpFluid_noBase64
+            }
+          }
+        }
       }
     }
   }

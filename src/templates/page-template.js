@@ -26,7 +26,13 @@ export const query = graphql`
         title
         date
         description
-        socialImage
+        socialImage {
+          childImageSharp {
+            fluid(maxWidth: 1500) {
+              ...GatsbyImageSharpFluid_noBase64
+            }
+          }
+        }
       }
     }
   }
