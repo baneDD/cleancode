@@ -1,7 +1,8 @@
 import React from 'react';
 import { useSiteMetadata } from '../../../hooks';
-import { Container, Copy } from './style';
+import Container from './style';
 import SocialBar from '../../SocialBar';
+import Copyright from '../../Copyright';
 
 const Author = () => {
   const {
@@ -11,12 +12,12 @@ const Author = () => {
   return (
     <Container>
       <SocialBar />
-      <Copy>
+      <Copyright>
         &copy;&nbsp;
         {name}
         &nbsp;
         {new Date().getFullYear()}
-      </Copy>
+      </Copyright>
     </Container>
   );
 };
