@@ -12,7 +12,7 @@ const useSiteMetadata = () => {
             author {
               name
               bio
-              contacts {
+              social {
                 twitter
                 linkedin
                 github

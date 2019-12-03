@@ -1,13 +1,11 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  margin: 0 auto;
+  margin: 10px auto 0px;
   text-align: center;
 `;
 
-export const Bio = styled.span``;
-
-export const Twitter = styled.span`
+export const Copy = styled.span`
   display: block;
-  margin-top: 30px;
+  margin-top: 10px;
 `;

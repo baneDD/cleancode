@@ -1,22 +1,22 @@
 import React from 'react';
 import { useSiteMetadata } from '../../../hooks';
-import { Container, Bio, Twitter } from './style';
+import { Container, Copy } from './style';
+import SocialBar from '../../SocialBar';
 
 const Author = () => {
-  const { author } = useSiteMetadata();
+  const {
+    author: { name },
+  } = useSiteMetadata();
 
   return (
     <Container>
-      <Twitter>
-        <a
-          href={author.contacts.twitter}
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          {`${author.name} on Twitter`}
-        </a>
-      </Twitter>
-      <Bio>{author.bio}</Bio>
+      <SocialBar />
+      <Copy>
+        &copy;&nbsp;
+        {name}
+        &nbsp;
+        {new Date().getFullYear()}
+      </Copy>
     </Container>
   );
 };

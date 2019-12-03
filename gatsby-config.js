@@ -6,12 +6,12 @@ module.exports = {
     author: {
       name: 'Bane Debeljević',
       bio: 'Developer • Architect • Leader',
-      contacts: {
-        twitter: '',
-        linkedin: '',
-        github: '',
-        codepen: '',
-        codesandbox: '',
+      social: {
+        twitter: 'https://twitter.com/bane_dd',
+        linkedin: 'https://www.linkedin.com/in/bane/',
+        github: 'https://github.com/baneDD',
+        codepen: 'https://codepen.io/banedd',
+        codesandbox: 'https://codesandbox.io/u/baneDD',
       },
     },
     disqusShortname: '',
@@ -77,7 +77,16 @@ module.exports = {
             },
           },
           'gatsby-remark-smartypants',
+          'gatsby-remark-component',
         ],
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: `${__dirname}/src/assets/`,
+        },
       },
     },
     'gatsby-plugin-root-import',
