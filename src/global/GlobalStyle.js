@@ -9,7 +9,6 @@ import {
   SANS_URL,
   SERIF_URL,
   MONO_URL,
-  SMALL_SCREEN,
   MOBILE_DEVICE,
 } from './Theme';
 
@@ -66,10 +65,6 @@ export default createGlobalStyle`
 
   img {
     max-width: 100%;
-  }
-
-  ${SMALL_SCREEN} {
-
   }
 
   ${MOBILE_DEVICE} {

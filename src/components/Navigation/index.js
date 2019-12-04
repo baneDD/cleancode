@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import MenuButton from './MenuButton';
-import { MenuLink, MenuItem, MenuList, MenuListContainer } from './style';
+import { MenuLink, MenuItem, MenuList, ResponsiveWrapper } from './style';
 
 const NavMenu = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -38,7 +38,7 @@ const NavMenu = () => {
 
   return (
     <nav ref={node} role="navigation">
-      <MenuListContainer>
+      <ResponsiveWrapper>
         <MenuButton
           className={getClassName()}
           onClickHandler={onClickHandler}
@@ -57,7 +57,7 @@ const NavMenu = () => {
             <MenuLink to="/contact">Contact</MenuLink>
           </MenuItem>
         </MenuList>
-      </MenuListContainer>
+      </ResponsiveWrapper>
     </nav>
   );
 };

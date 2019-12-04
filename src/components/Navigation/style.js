@@ -19,26 +19,6 @@ export const MenuLink = styled(Link)`
   }
 `;
 
-export const MenuListContainer = styled.div`
-  display: block;
-  position: absolute;
-  top: 50px;
-  left: 50px;
-
-  z-index: 1;
-
-  user-select: none;
-
-  a {
-    border-bottom: none;
-  }
-
-  ${MOBILE_DEVICE} {
-    top: 20px;
-    left: 20px;
-  }
-`;
-
 export const MenuList = styled.ul`
   position: absolute;
   top: -40px;
@@ -58,21 +38,43 @@ export const MenuList = styled.ul`
 
   &.open {
     transform: none;
-
-    ${MOBILE_DEVICE} {
-      top: -56px;
-      left: -16px;
-      padding: 16px;
-      padding-top: 55px;
-
-      a {
-        color: ${DARK_GREY};
-      }
-    }
   }
 `;
 
 export const MenuItem = styled.li`
   padding: 10px 0;
   font-size: 24px;
+`;
+
+export const ResponsiveWrapper = styled.div`
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+
+  z-index: 1;
+
+  user-select: none;
+
+  a {
+    border-bottom: none;
+  }
+
+  ${MOBILE_DEVICE} {
+    top: 20px;
+    left: 20px;
+
+    ${MenuList} {
+      &.open {
+        top: -56px;
+        left: -16px;
+        padding: 16px;
+        padding-top: 55px;
+
+        a {
+          color: ${DARK_GREY};
+        }
+      }
+    }
+  }
 `;

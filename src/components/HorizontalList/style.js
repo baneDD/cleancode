@@ -1,16 +1,6 @@
 import styled from 'styled-components';
 import { LIGHT_GREY, MOBILE_DEVICE } from '../../global/Theme';
 
-export const Container = styled.div`
-  display: table; /* Allow the centering to work */
-  margin: 0 auto;
-  font-size: 14px;
-  color: ${LIGHT_GREY};
-  margin-top: 12px;
-  letter-spacing: 10px;
-  text-transform: uppercase;
-`;
-
 export const ItemList = styled.ul`
   list-style-type: none;
   margin: 0;
@@ -35,15 +25,27 @@ export const Item = styled.li`
       content: none;
     }
   }
+`;
+
+export const ResponsiveWrapper = styled.div`
+  display: table; /* Allow the centering to work */
+  margin: 0 auto;
+  font-size: 14px;
+  color: ${LIGHT_GREY};
+  margin-top: 12px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
 
   ${MOBILE_DEVICE} {
-    float: initial;
-    margin-left: 0px;
-    margin-top: 10px;
-    text-align: center;
+    ${Item} {
+      float: initial;
+      margin-left: 0px;
+      margin-top: 10px;
+      text-align: center;
 
-    &:before {
-      content: none;
+      &:before {
+        content: none;
+      }
     }
   }
 `;
