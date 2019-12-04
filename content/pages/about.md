@@ -12,8 +12,4 @@ If you want to work with me or simply want to get in touch and learn more, pleas
 
 Bane Debeljević
 
-
-
 ![Toronto Skyline At Night - ](/media/toronto.jpg)
-
-<image-caption>Photo by <a href="https://unsplash.com/@juanster">Juan Davila</a> on <a href="https://unsplash.com">Unsplash</a></image-caption>
