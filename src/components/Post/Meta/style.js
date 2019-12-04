@@ -1,9 +1,14 @@
 import styled from 'styled-components';
+import { LIGHT_GREY, MOBILE_DEVICE } from '../../../global/Theme';
 
-const StyledMeta = styled.p`
+const Paragraph = styled.p`
   font-family: 'Oxygen', sans-serif;
   font-size: 14px;
-  color: #7f7f7f;
+  color: ${LIGHT_GREY};
+
+  ${MOBILE_DEVICE} {
+    font-size: 12px;
+  }
 `;
 
-export default StyledMeta;
+export default Paragraph;

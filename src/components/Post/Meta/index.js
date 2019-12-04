@@ -1,18 +1,19 @@
 import React from 'react';
 import readingTime from 'reading-time';
 import { formatDate } from '../../../utils';
-import StyledMeta from './style';
+import Paragraph from './style';
 
 const Meta = ({
   node: {
     frontmatter: { date },
     html,
   },
+  className,
 }) => (
-  <StyledMeta>
+  <Paragraph className={className}>
     {formatDate(date)}
     {html && ` · ${readingTime(html).text}`}
-  </StyledMeta>
+  </Paragraph>
 );
 
 export default Meta;

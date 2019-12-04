@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import ArticleList from './article-list-template';
+import ArticleList from '../components/ArticleList';
 
 const TagTemplate = ({ data, pageContext }) => {
   const { tag } = pageContext;
