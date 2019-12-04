@@ -1,12 +1,12 @@
 import styled from 'styled-components';
-import { LIGHT_GREY, MOBILE_DEVICE } from '../../../global/Theme';
+import { LIGHT_GREY, VERY_SMALL_SCREEN } from '../../../global/Theme';
 
 const Paragraph = styled.p`
   font-family: 'Oxygen', sans-serif;
   font-size: 14px;
   color: ${LIGHT_GREY};
 
-  ${MOBILE_DEVICE} {
+  @media ${VERY_SMALL_SCREEN} {
     font-size: 12px;
   }
 `;

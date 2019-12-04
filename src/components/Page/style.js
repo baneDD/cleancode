@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { SMALL_SCREEN, MOBILE_DEVICE } from '../../global/Theme';
+import { SMALL_SCREEN, VERY_SMALL_SCREEN } from '../../global/Theme';
 
 const NavBar = styled.div`
   position: relative;
@@ -29,13 +29,13 @@ const ResponsiveWrapper = styled.div`
   display: flex;
   flex-direction: column;
 
-  ${SMALL_SCREEN} {
+  @media ${SMALL_SCREEN} {
     ${Content} {
       margin: 0 50px;
     }
   }
 
-  ${MOBILE_DEVICE} {
+  @media ${VERY_SMALL_SCREEN} {
     ${Content} {
       margin: 0 20px;
     }

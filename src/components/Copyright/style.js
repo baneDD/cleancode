@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { MOBILE_DEVICE, LIGHT_GREY } from '../../global/Theme';
+import { VERY_SMALL_SCREEN, LIGHT_GREY } from '../../global/Theme';
 
 const Copy = styled.span`
   display: block;
@@ -8,7 +8,7 @@ const Copy = styled.span`
   font-size: 14px;
   color: ${LIGHT_GREY};
 
-  ${MOBILE_DEVICE} {
+  @media ${VERY_SMALL_SCREEN} {
     margin: 0 0 20px 0;
     font-size: 12px;
   }

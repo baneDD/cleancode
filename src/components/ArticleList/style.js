@@ -2,13 +2,19 @@ import { TagCloud } from 'react-tagcloud';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 import Meta from '../Post/Meta';
-import { GREEN, SANS, MOBILE_DEVICE } from '../../global/Theme';
+import {
+  GREEN,
+  SANS,
+  VERY_SMALL_SCREEN,
+  MOBILE_DEVICE,
+} from '../../global/Theme';
 
 export const StyledTagCloud = styled(TagCloud)`
   background-color: black;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
+  margin-top: 40px;
 
   .simple-cloud .tag-cloud-tag {
     cursor: pointer;
@@ -57,7 +63,7 @@ export const ResponsiveWrapper = styled.li`
     width: 100%;
   }
 
-  ${MOBILE_DEVICE} {
+  @media ${VERY_SMALL_SCREEN}, ${MOBILE_DEVICE} {
     ${PostLink} {
       font-size: 16px;
     }
@@ -78,6 +84,10 @@ export const ResponsiveWrapper = styled.li`
       padding: 0 !important;
       -webkit-line-clamp: 2;
       height: calc(1em * 1.2 * 2);
+    }
+
+    ${StyledTagCloud} {
+      margin-top: 10px;
     }
   }
 `;

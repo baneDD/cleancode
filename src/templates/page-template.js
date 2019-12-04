@@ -3,12 +3,17 @@ import RehypeReact from 'rehype-react';
 import { graphql } from 'gatsby';
 import SocialBar from '../components/SocialBar';
 import Copyright from '../components/Copyright';
+import ImageCaption from '../components/ImageCaption';
 import Layout from '../global/Layout';
 import Page from '../components/Page';
 
 const renderAst = new RehypeReact({
   createElement: React.createElement,
-  components: { copyright: Copyright, social: SocialBar },
+  components: {
+    copyright: Copyright,
+    social: SocialBar,
+    'image-caption': ImageCaption,
+  },
 }).Compiler;
 
 const PageTemplate = ({ data }) => {

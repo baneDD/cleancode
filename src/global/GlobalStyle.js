@@ -9,7 +9,7 @@ import {
   SANS_URL,
   SERIF_URL,
   MONO_URL,
-  MOBILE_DEVICE,
+  VERY_SMALL_SCREEN,
 } from './Theme';
 
 export default createGlobalStyle`
@@ -67,7 +67,7 @@ export default createGlobalStyle`
     max-width: 100%;
   }
 
-  ${MOBILE_DEVICE} {
+  @media ${VERY_SMALL_SCREEN} {
   h1 {
     font-size: 22px;
   }

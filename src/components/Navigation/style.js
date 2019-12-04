@@ -4,7 +4,7 @@ import {
   LIGHT_GREY,
   DARK_GREY,
   WHITE,
-  MOBILE_DEVICE,
+  VERY_SMALL_SCREEN,
 } from '../../global/Theme';
 
 export const MenuLink = styled(Link)`
@@ -60,7 +60,7 @@ export const ResponsiveWrapper = styled.div`
     border-bottom: none;
   }
 
-  ${MOBILE_DEVICE} {
+  @media ${VERY_SMALL_SCREEN} {
     top: 20px;
     left: 20px;
 

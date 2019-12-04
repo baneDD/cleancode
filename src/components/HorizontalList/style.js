@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { LIGHT_GREY, MOBILE_DEVICE } from '../../global/Theme';
+import { LIGHT_GREY, VERY_SMALL_SCREEN } from '../../global/Theme';
 
 export const ItemList = styled.ul`
   list-style-type: none;
@@ -36,7 +36,7 @@ export const ResponsiveWrapper = styled.div`
   letter-spacing: 10px;
   text-transform: uppercase;
 
-  ${MOBILE_DEVICE} {
+  @media ${VERY_SMALL_SCREEN} {
     ${Item} {
       float: initial;
       margin-left: 0px;
