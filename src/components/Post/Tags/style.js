@@ -21,7 +21,7 @@ const StyledTagCloud = styled(TagCloud)`
     content: 'tags';
     position: absolute;
     right: 16px;
-    bottom: -4px;
+    bottom: -3px;
     padding: 0 4px;
     text-transform: uppercase;
     letter-spacing: 1px;
