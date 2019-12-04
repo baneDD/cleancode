@@ -19,16 +19,14 @@
   "scripts": {
     "start": "run-p start:**",
     "start:gatsby": "gatsby develop -H 0.0.0.0 -o",
-    "start:storybook": "start-storybook -p 9000 -c .storybook -s ./static",
-    "develop": "concurrently --kill-others \"yarn start:gatsby\" \"yarn start:storybook\"",
+    "start:storybook": "NODE_ENV=production start-storybook -p 9000 -c .storybook -s ./static",
     "build": "run-p 'build:!(storybook)'",
     "build:gatsby": "gatsby build",
-    "build:storybook": "build-storybook -c .storybook -o storybook",
+    "build:storybook": "NODE_ENV=production build-storybook -c .storybook -o storybook",
     "serve": "gatsby serve -o -p 8080",
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "concurrently": "^5.0.0",
     "gatsby": "^2.15.6",
     "gatsby-image": "^2.2.34",
     "gatsby-plugin-lodash": "^3.1.16",
