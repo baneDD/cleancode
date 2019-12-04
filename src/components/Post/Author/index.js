@@ -12,12 +12,7 @@ const Author = () => {
   return (
     <Container>
       <SocialBar />
-      <Copyright>
-        &copy;&nbsp;
-        {name}
-        &nbsp;
-        {new Date().getFullYear()}
-      </Copyright>
+      <Copyright />
     </Container>
   );
 };

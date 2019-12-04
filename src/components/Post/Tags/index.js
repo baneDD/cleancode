@@ -1,12 +1,12 @@
-import React from 'react';
-import { navigate } from 'gatsby';
-import _ from 'lodash';
-import StyledTagCloud from './style';
+import React from 'react'
+import { navigate } from 'gatsby'
+import _ from 'lodash'
+import StyledTagCloud from './style'
 
 const tagCloudColorOptions = {
-  luminosity: 'light',
+  luminosity: 'dark',
   hue: 'green',
-};
+}
 
 const Tags = ({ tags, minSize, maxSize, options }) => (
   <StyledTagCloud
@@ -17,6 +17,6 @@ const Tags = ({ tags, minSize, maxSize, options }) => (
     className="simple-cloud"
     onClick={(tag) => navigate(`/tag/${_.kebabCase(tag.value)}`)}
   />
-);
+)
 
-export default Tags;
+export default Tags
