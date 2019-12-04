@@ -86,7 +86,6 @@ const ArticleList = ({ data, pageContext, pageTitle, pageDescription }) => {
   const { prevPagePath, nextPagePath, hasPrevPage, hasNextPage } = pageContext;
 
   const { edges } = data.allMarkdownRemark;
-
   return (
     <Layout
       title={pageTitle || title}

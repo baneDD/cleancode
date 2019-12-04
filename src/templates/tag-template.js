@@ -39,10 +39,10 @@ export const query = graphql`
       edges {
         node {
           fields {
-            slug
             categorySlug
           }
           frontmatter {
+            slug
             title
             date
             category
