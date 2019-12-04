@@ -6,6 +6,10 @@ const StyledWrapper = styled.div`
   .gatsby-resp-image-background-image {
     border-radius: 10px;
   }
+
+  .gatsby-resp-image-wrapper {
+    margin-top: 20px;
+  }
 `;
 
 const Content = ({ body }) => (

@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
-import { createGlobalStyle } from 'styled-components'
-import reset from 'styled-reset-advanced'
-import { MEDIUM_GREY, BLACK } from './Theme'
+import { createGlobalStyle } from 'styled-components';
+import reset from 'styled-reset-advanced';
+import { MEDIUM_GREY, BLACK } from './Theme';
 
 export default createGlobalStyle`
   ${reset};
@@ -44,10 +44,16 @@ export default createGlobalStyle`
   a {
     line-height: 1.5em;
     text-decoration: none;
-    border-bottom: 2px solid #3498DB;
+    border-bottom: 1px solid #76d7c4;
+    transition: border-bottom 0.5sec linear, font-weight 0.5sec linear;
+    &:hover {
+      font-weight: 900;
+      border-bottom: 2px solid #76d7c4;
+      transition: border-bottom 0.5sec linear, font-weight 0.5sec linear;
+    }
   }
 
   img {
     max-width: 100%;
   }
-`
+`;
