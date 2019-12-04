@@ -7,14 +7,9 @@ const Copyright = () => {
     author: { name },
   } = useSiteMetadata();
 
-  return (
-    <Copy>
-      &copy;&nbsp;
-      {name}
-      &nbsp;
-      {new Date().getFullYear()}
-    </Copy>
-  );
+  const year = new Date().getFullYear();
+
+  return <Copy>{`©${name} ${year}`}</Copy>;
 };
 
 export default Copyright;

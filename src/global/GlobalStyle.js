@@ -1,16 +1,27 @@
-/* eslint-disable max-len */
 import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset-advanced';
-import { MEDIUM_GREY, BLACK } from './Theme';
+import {
+  MEDIUM_GREY,
+  BLACK,
+  GREEN,
+  SANS,
+  SERIF,
+  SANS_URL,
+  SERIF_URL,
+  MONO_URL,
+  SMALL_SCREEN,
+  MOBILE_DEVICE,
+} from './Theme';
 
 export default createGlobalStyle`
   ${reset};
 
-  @import url('https://fonts.googleapis.com/css?family=Anonymous+Pro&display=swap');
-  @import url('https://fonts.googleapis.com/css?family=Oxygen&display=swap');
+  @import url(${MONO_URL});
+  @import url(${SANS_URL});
+  @import url(${SERIF_URL});
 
   body {
-    font-family: 'Oxygen', sans-serif;
+    font-family: ${SANS};
     color: ${BLACK};
   }
 
@@ -19,18 +30,17 @@ export default createGlobalStyle`
   }
 
   h1 {
-    font-size: 20px;
+    font-size: 28px;
     color: ${MEDIUM_GREY};
   }
 
   h2 {
-    font-size: 16px;
+    font-size: 24px;
     color: ${MEDIUM_GREY};
     text-transform: uppercase;
   }
 
   ul {
-
     li {
       line-height: 24px;
     }
@@ -38,22 +48,40 @@ export default createGlobalStyle`
 
   p {
     line-height: 1.5em;
-    font-size: 14px;
+    font-family: ${SERIF};
+    font-size: 21px;
   }
 
   a {
     line-height: 1.5em;
     text-decoration: none;
-    border-bottom: 1px solid #76d7c4;
+    border-bottom: 1px solid ${GREEN};
     transition: border-bottom 0.5sec linear, font-weight 0.5sec linear;
     &:hover {
       font-weight: 900;
-      border-bottom: 2px solid #76d7c4;
+      border-bottom: 2px solid ${GREEN};
       transition: border-bottom 0.5sec linear, font-weight 0.5sec linear;
     }
   }
 
   img {
     max-width: 100%;
+  }
+
+  ${SMALL_SCREEN} {
+
+  }
+
+  ${MOBILE_DEVICE} {
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 18px;
   }
 `;

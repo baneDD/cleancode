@@ -18,7 +18,7 @@ export const query = graphql`
   query PostBySlug($slug: String!) {
     post: markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       id
-      html
+      htmlAst
       frontmatter {
         slug
         date

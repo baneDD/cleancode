@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-import Page from '../components/Page';
-import Layout from '../global/Layout';
-import HorizontalList from '../components/HorizontalList';
-import { DARK_GREY } from '../global/Theme';
+import React from 'react'
+import styled from 'styled-components'
+import Page from '../components/Page'
+import Layout from '../global/Layout'
+import HorizontalList from '../components/HorizontalList'
+import { DARK_GREY, SANS } from '../global/Theme'
 
 const HomeWrapper = styled.div`
   width: 100%;
@@ -13,17 +13,14 @@ const HomeWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: 'Anonymous Pro', 'Menlo', 'Monaco', 'Lucida Console',
-    'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
-    'Courier New', monospace;
+  font-family: ${SANS};
   font-weight: 500;
-`;
+`
 
 const Heading = styled.h1`
-  font-size: 24px;
   color: ${DARK_GREY};
   margin-top: 60px;
-`;
+`
 
 const IndexTemplate = () => (
   <Layout>
@@ -34,6 +31,6 @@ const IndexTemplate = () => (
       </HomeWrapper>
     </Page>
   </Layout>
-);
+)
 
-export default IndexTemplate;
+export default IndexTemplate

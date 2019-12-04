@@ -1,6 +1,11 @@
 import styled from 'styled-components';
 import { Link } from 'gatsby';
-import { LIGHT_GREY, DARK_GREY, WHITE } from '../../global/Theme';
+import {
+  LIGHT_GREY,
+  DARK_GREY,
+  WHITE,
+  MOBILE_DEVICE,
+} from '../../global/Theme';
 
 export const MenuLink = styled(Link)`
   text-decoration: none;
@@ -28,7 +33,7 @@ export const MenuListContainer = styled.div`
     border-bottom: none;
   }
 
-  @media all and (max-width: 650px) {
+  ${MOBILE_DEVICE} {
     top: 20px;
     left: 20px;
   }
@@ -54,7 +59,7 @@ export const MenuList = styled.ul`
   &.open {
     transform: none;
 
-    @media all and (max-width: 650px) {
+    ${MOBILE_DEVICE} {
       top: -56px;
       left: -16px;
       padding: 16px;
@@ -69,5 +74,5 @@ export const MenuList = styled.ul`
 
 export const MenuItem = styled.li`
   padding: 10px 0;
-  font-size: 20px;
+  font-size: 24px;
 `;

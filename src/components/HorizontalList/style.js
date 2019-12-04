@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { LIGHT_GREY } from '../../global/Theme';
+import { LIGHT_GREY, MOBILE_DEVICE } from '../../global/Theme';
 
 export const Container = styled.div`
   display: table; /* Allow the centering to work */
@@ -36,7 +36,7 @@ export const Item = styled.li`
     }
   }
 
-  @media all and (max-width: 650px) {
+  ${MOBILE_DEVICE} {
     float: initial;
     margin-left: 0px;
     margin-top: 10px;

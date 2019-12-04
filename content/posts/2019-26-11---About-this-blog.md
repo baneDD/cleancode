@@ -25,7 +25,7 @@ A quick note about this site and the blog as I work to expand the functionality 
 
 ![Photo by Scott Webb on Unsplash](/media/toronto-nathan-phillips.jpg)
 
-<p style="text-align: right; margin-top: 3px; margin-right: 12px;">Photo by <a href="https://unsplash.com/@scottwebb">Scott Webb</a> on <a href="https://unsplash.com">Unsplash</a></p>
+<image-caption>Photo by <a href="https://unsplash.com/@scottwebb">Scott Webb</a> on <a href="https://unsplash.com">Unsplash</a></image-caption>
 
 Once the decision to use Gatsby was made it was onto selecting a headless CMS to use. Since I was going to host the blog on the excellent [Netlify](https://www.netlify.com/) platform, I wanted to try out the [Netlify CMS](https://www.netlifycms.org/). It's very cool, using plain Markdown for content and the content is stored in a GIT repository. In my case, the code is stored along with the Gatsby source code for the site.
 

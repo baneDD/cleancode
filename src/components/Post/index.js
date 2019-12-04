@@ -1,27 +1,26 @@
 import React from 'react';
-import styled from 'styled-components';
+import RehypeReact from 'rehype-react';
 import Author from './Author';
 import Comments from './Comments';
 import Content from './Content';
 import Meta from './Meta';
 import Tags from './Tags';
 import Page from '../Page';
+import ImageCaption from '../ImageCaption';
 
-const StyledMeta = styled.p`
-  font-size: 12px;
-  color: #7f7f7f;
-`;
+const renderAst = new RehypeReact({
+  createElement: React.createElement,
+  components: { 'image-caption': ImageCaption },
+}).Compiler;
 
 const Post = ({ post }) => {
-  const { html } = post;
+  const { htmlAst } = post;
   const { slug, tags, title } = post.frontmatter;
 
   return (
     <Page title={title}>
-      <StyledMeta>
-        <Meta node={post} textColor="#7f7f7f" />
-      </StyledMeta>
-      <Content body={html} />
+      <Meta node={post} />
+      <Content>{renderAst(htmlAst)}</Content>
       <div style={{ marginTop: '30px' }}>
         {tags && (
           <Tags

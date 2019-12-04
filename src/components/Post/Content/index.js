@@ -8,15 +8,14 @@ const StyledWrapper = styled.div`
   }
 
   .gatsby-resp-image-wrapper {
-    margin-top: 20px;
+    margin-top: 40px;
+
+    a {
+      border-bottom: none;
+    }
   }
 `;
 
-const Content = ({ body }) => (
-  <StyledWrapper
-    // eslint-disable-next-line react/no-danger
-    dangerouslySetInnerHTML={{ __html: body }}
-  />
-);
+const Content = ({ children }) => <StyledWrapper>{children}</StyledWrapper>;
 
 export default Content;

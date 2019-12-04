@@ -9,6 +9,7 @@ import Layout from '../global/Layout';
 import Page from '../components/Page';
 import Pagination from '../components/Pagination';
 import { useSiteMetadata } from '../hooks';
+import { MOBILE_DEVICE } from '../global/Theme';
 
 const StyledTagCloud = styled(TagCloud)`
   background-color: black;
@@ -23,7 +24,7 @@ const StyledTagCloud = styled(TagCloud)`
 
 const StyledMeta = styled.p`
   margin: 0px;
-  font-size: 12px;
+  font-size: 16px;
   color: #a9a9a9;
 `;
 
@@ -54,7 +55,7 @@ const StyledPostDescriptionWrapper = styled.div`
 const StyledPostDescription = styled.p`
   margin: 10px 0 0;
   color: white;
-  @media all and (max-width: 650px) {
+  ${MOBILE_DEVICE} {
     display: block;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -94,8 +95,8 @@ const ArticleList = ({ data, pageContext, pageTitle, pageDescription }) => {
       <Page title={pageTitle || title}>
         {data.tags && data.tags.group && (
           <StyledTagCloud
-            minSize={16}
-            maxSize={32}
+            minSize={21}
+            maxSize={42}
             colorOptions={tagCloudColorOptions}
             tags={data.tags.group}
             className="simple-cloud"

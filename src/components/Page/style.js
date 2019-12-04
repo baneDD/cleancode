@@ -1,45 +1,57 @@
 import styled from 'styled-components';
-import Navigation from '../Navigation';
-
-const Wrapper = styled.div`
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 50px;
-`;
+import { SMALL_SCREEN, MOBILE_DEVICE } from '../../global/Theme';
 
 const NavBar = styled.div`
   position: relative;
   display: block;
   height: 88px;
-
-  @media all and (max-width: 650px) {
-    height: 58px;
-  }
 `;
 
-const StyledNavBtn = styled(Navigation)``;
-
-const StyledTitle = styled.h1`
+const Title = styled.h1`
   display: inline-block;
   position: absolute;
   left: 112px;
   top: 22px;
+  margin-right: 112px;
+  width: calc(100% - 224px);
+  text-align: center;
   text-transform: capitalize;
-
-  @media all and (max-width: 650px) {
-    top: -8px;
-    left: 68px;
-  }
 `;
 
 const Content = styled.div`
   display: inline-block;
-  margin: 0 50px;
+  max-width: 1000px;
+  margin: 50px auto;
+`;
 
-  @media all and (max-width: 650px) {
-    margin: 0 20px;
+const ResponsiveWrapper = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  ${SMALL_SCREEN} {
+    ${Content} {
+      margin: 0 50px;
+    }
+  }
+
+  ${MOBILE_DEVICE} {
+    ${Content} {
+      margin: 0 20px;
+    }
+
+    ${Title} {
+      text-align: left;
+      margin-right: 0;
+      width: calc(100% - 68px);
+      top: -8px;
+      left: 68px;
+    }
+
+    ${NavBar} {
+      height: 58px;
+    }
   }
 `;
 
-export { Wrapper, NavBar, StyledNavBtn, StyledTitle, Content };
+export { ResponsiveWrapper, NavBar, Title, Content };

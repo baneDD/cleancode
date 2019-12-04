@@ -10,7 +10,7 @@ const StyledTagCloud = styled(TagCloud)`
 
   &.simple-cloud .tag-cloud-tag {
     cursor: pointer;
-    padding: 4px;
+    padding: 7px;
 
     &:hover {
       text-decoration: underline;
@@ -25,7 +25,7 @@ const StyledTagCloud = styled(TagCloud)`
     padding: 0 4px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 12px;
+    font-size: 16px;
     color: #999;
     background: #fff;
   }

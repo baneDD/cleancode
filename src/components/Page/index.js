@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react';
-import { Wrapper, NavBar, StyledNavBtn, StyledTitle, Content } from './style';
+import Navigation from '../Navigation';
+import { ResponsiveWrapper, NavBar, Title, Content } from './style';
 
 const Page = ({ title, children }) => {
   const pageRef = useRef();
@@ -9,13 +10,13 @@ const Page = ({ title, children }) => {
   });
 
   return (
-    <Wrapper ref={pageRef}>
+    <ResponsiveWrapper ref={pageRef}>
       <NavBar>
-        <StyledNavBtn />
-        {title && <StyledTitle>{title}</StyledTitle>}
+        <Navigation />
+        {title && <Title>{title}</Title>}
       </NavBar>
       <Content>{children}</Content>
-    </Wrapper>
+    </ResponsiveWrapper>
   );
 };
 
