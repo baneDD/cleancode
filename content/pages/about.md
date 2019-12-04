@@ -16,4 +16,4 @@ Bane Debeljević
 
 ![Toronto Skyline At Night - ](/media/toronto.jpg)
 
-<image-caption>Photo by <a href="https://unsplash.com/@juanster">Juan Davila</a> on <a href="https://unsplash.com">Unsplash</a></image-caption>Juan Davila
+<image-caption>Photo by <a href="https://unsplash.com/@juanster">Juan Davila</a> on <a href="https://unsplash.com">Unsplash</a></image-caption>
