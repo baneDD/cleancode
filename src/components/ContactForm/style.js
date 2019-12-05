@@ -107,6 +107,17 @@ export const Form = styled.form`
     -webkit-appearance: button;
   }
 
+  input,
+  input:before,
+  input:after,
+  textarea {
+    -webkit-user-select: initial;
+    -khtml-user-select: initial;
+    -moz-user-select: initial;
+    -ms-user-select: initial;
+    user-select: initial;
+  }
+
   @media ${VERY_SMALL_SCREEN} {
     ${Input}, ${Textarea} {
       width: 260px;

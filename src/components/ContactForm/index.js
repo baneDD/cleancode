@@ -14,19 +14,19 @@ const ContactForm = () => (
   <Form method="post" netlify-honeypot="bot-field" data-netlify="true">
     <Input type="hidden" name="bot-field" />
     <InputWrapper>
-      <Label for="name">Name:</Label>
+      <Label htmlFor="name">Name:</Label>
       <Input type="text" name="name" id="name" />
     </InputWrapper>
     <InputWrapper>
-      <Label for="email">Email:</Label>
+      <Label htmlFor="email">Email:</Label>
       <Input type="email" name="email" id="email" />
     </InputWrapper>
     <InputWrapper>
-      <Label for="subject">Subject:</Label>
+      <Label htmlFor="subject">Subject:</Label>
       <Input type="text" name="subject" id="subject" />
     </InputWrapper>
     <InputWrapper>
-      <Label for="message">Message:</Label>
+      <Label htmlFor="message">Message:</Label>
       <Textarea name="message" id="message" rows="5" />
     </InputWrapper>
     <ButtonWrapper>
