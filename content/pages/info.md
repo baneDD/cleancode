@@ -13,8 +13,8 @@ draft: false
 
 <style>
 .my-image {
-    margin-top: 30px;
-    margin-left: calc(50% - 100px);
+    margin-left: 30px;
+    float: right;
 }
 
 .my-image div {
@@ -26,7 +26,6 @@ draft: false
 .my-image img {
   border: 1px solid #666;
   border-radius: 50% !important;
-  float: right;
   width: 200px !important;
   height: auto !important;
 }
