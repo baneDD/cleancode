@@ -11,7 +11,7 @@ const Title = styled.h1`
   display: inline-block;
   position: absolute;
   left: 112px;
-  top: 22px;
+  top: 16px;
   margin-right: 112px;
   width: calc(100% - 224px);
   text-align: center;
@@ -21,7 +21,7 @@ const Title = styled.h1`
 const Content = styled.div`
   display: inline-block;
   max-width: 1000px;
-  margin: 10px auto;
+  margin: 0 auto;
 `;
 
 const ResponsiveWrapper = styled.div`

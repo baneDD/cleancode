@@ -8,11 +8,19 @@ I'm a web developer based out of Toronto focused on engaging, fun and innovative
 
 I’ve worked with major online retailers in North America including leading teams at Indigo and iHerb and helped improve web experience for one of the most popular online video games on the planet. Starting at Ryerson University where I won a contest to redesign and implement a portal for School of Computer Science, I’ve spent nearly a decade and a half mastering the craft of creating joyful online experiences.
 
-If you want to work with me or simply want to get in touch and learn more, please [email me](mailto:bane.dd@gmail.com).
+If you want to work with me or simply want to get in touch and learn more, please [contact me](/contact/).
 
 Bane Debeljević
 
 <br></br>
+<style>
+ img.gatsby-resp-image-image, span.gatsby-resp-image-background-image {
+     border-radius: 10px;
+ }
+ a.gatsby-resp-image-link {
+     border-bottom: none;
+ }
+</style>
 
 ![Toronto Skyline At Night - ](/media/toronto.jpg)
 
