@@ -39,6 +39,12 @@ export default createGlobalStyle`
     text-transform: uppercase;
   }
 
+  h3 {
+    font-size: 20px;
+    color: ${MEDIUM_GREY};
+    text-transform: uppercase;
+  }
+
   ul {
     li {
       line-height: 24px;

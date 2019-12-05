@@ -7,6 +7,7 @@ import ImageCaption from '../components/ImageCaption';
 import ContactForm from '../components/ContactForm';
 import Layout from '../global/Layout';
 import Page from '../components/Page';
+import WrappedImage from '../components/WrappedImage';
 
 const renderAst = new RehypeReact({
   createElement: React.createElement,
@@ -15,6 +16,7 @@ const renderAst = new RehypeReact({
     social: SocialBar,
     'image-caption': ImageCaption,
     'contact-form': ContactForm,
+    'wrapped-image': WrappedImage,
   },
 }).Compiler;
 
