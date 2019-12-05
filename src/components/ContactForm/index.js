@@ -11,8 +11,10 @@ import {
 } from './style';
 
 const ContactForm = () => (
-  <Form method="post" netlify-honeypot="bot-field" data-netlify="true">
-    <Input type="hidden" name="bot-field" />
+  <Form method="post" netlify-honeypot="phone-number" data-netlify="true">
+    {/* This is a bot field for Netlify honeypot */}
+    <Input type="hidden" name="phone-number" />
+    {/* Below are the fields with data that we are collecting */}
     <InputWrapper>
       <Label htmlFor="name">Name:</Label>
       <Input type="text" name="name" id="name" />
@@ -29,6 +31,7 @@ const ContactForm = () => (
       <Label htmlFor="message">Message:</Label>
       <Textarea name="message" id="message" rows="5" />
     </InputWrapper>
+    <div data-netlify-recaptcha="true" />
     <ButtonWrapper>
       <Reset type="reset" value="Clear" />
       <Button type="submit">Send</Button>
