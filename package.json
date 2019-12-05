@@ -55,6 +55,7 @@
     "react-disqus-comments": "^1.4.0",
     "react-dom": "^16.9.0",
     "react-helmet": "^5.2.1",
+    "react-hook-form": "^3.28.12",
     "react-tagcloud": "^2.0.0",
     "reading-time": "^1.2.0",
     "rehype-react": "^4.0.1",

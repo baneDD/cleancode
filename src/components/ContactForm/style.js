@@ -38,17 +38,33 @@ const CommonButtonStyle = `
   }
 `;
 
+const CommonErrorStyle = `
+  &.errors {
+    border: 2px solid red;
+
+    &::placeholder {
+      color: #ffb3b3;
+    }
+  }`;
+
+// We are hiding the labels for style but using them for accessiblity
+// Styling as documented at https://www.w3.org/WAI/tutorials/forms/labels/
 export const Label = styled.label`
-  text-align: right;
-  padding-right: 7px;
-  display: inline-block;
-  min-width: 80px;
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 `;
 
 export const Input = styled.input`
   width: 400px;
   height: 30px;
   ${CommonInputStyle}
+  ${CommonErrorStyle}
 `;
 
 export const Textarea = styled.textarea`
@@ -56,6 +72,7 @@ export const Textarea = styled.textarea`
   width: 400px;
   height: 104px;
   ${CommonInputStyle}
+  ${CommonErrorStyle}
 `;
 
 export const Button = styled.button`
@@ -64,10 +81,14 @@ export const Button = styled.button`
 
 export const Reset = styled.input`
   ${CommonButtonStyle}
+
+  &:focus {
+    outline: none;
+  }
 `;
 
 export const InputWrapper = styled.div`
-  margin: 10px 0 10px -80px;
+  margin: 10px 0;
 `;
 
 export const ButtonWrapper = styled.div`
@@ -105,6 +126,14 @@ export const Form = styled.form`
   [type='reset'],
   [type='submit'] {
     -webkit-appearance: button;
+  }
+
+  input[type='search'] {
+    -webkit-appearance: none;
+  }
+
+  &:-webkit-search-cancel-button {
+    -webkit-appearance: none;
   }
 
   input,

@@ -11,7 +11,7 @@ const WrappedImage = ({ src, alt, className }) => {
             extension
             relativePath
             childImageSharp {
-              fluid(maxWidth: 200) {
+              fluid(maxWidth: 1000) {
                 ...GatsbyImageSharpFluid
               }
             }
