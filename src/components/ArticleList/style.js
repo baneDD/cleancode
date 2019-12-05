@@ -10,15 +10,21 @@ import {
 } from '../../global/Theme';
 
 export const StyledTagCloud = styled(TagCloud)`
-  min-width: 100%;
+  max-width: 100%;
+  min-width: 550px;
   background-color: black;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 30px;
 
   .simple-cloud .tag-cloud-tag {
     cursor: pointer;
+  }
+
+  @media ${VERY_SMALL_SCREEN}, ${MOBILE_DEVICE} {
+    min-width: 280px;
+    margin-top: 10px;
   }
 `;
 
@@ -85,10 +91,6 @@ export const ResponsiveWrapper = styled.li`
       padding: 0 !important;
       -webkit-line-clamp: 2;
       height: calc(1em * 1.2 * 2);
-    }
-
-    ${StyledTagCloud} {
-      margin-top: 10px;
     }
   }
 `;
