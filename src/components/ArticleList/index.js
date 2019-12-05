@@ -74,8 +74,8 @@ const ArticleList = ({ data, pageContext, pageTitle, pageDescription }) => {
           hasPrevPage={hasPrevPage}
           hasNextPage={hasNextPage}
         />
+        <Copyright />
       </Page>
-      <Copyright />
     </Layout>
   );
 };

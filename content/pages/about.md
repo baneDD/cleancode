@@ -26,7 +26,6 @@ Bane Debeljević
 
 <image-caption>Photo by <a href="https://unsplash.com/@juanster">Juan Davila</a> on <a href="https://unsplash.com">Unsplash</a></image-caption>
 
-<br></br>
 <div style="text-align: center">
     <social></social>
     <copyright></copyright>
