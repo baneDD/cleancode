@@ -13,7 +13,7 @@ draft: false
 
 <style>
 .my-image {
-    margin-left: 30px;
+    margin: 30px 0 0 30px;
     float: right;
 }
 
