@@ -24,7 +24,7 @@ export const StyledTagCloud = styled(TagCloud)`
 
   @media ${VERY_SMALL_SCREEN}, ${MOBILE_DEVICE} {
     min-width: 280px;
-    margin-top: 10px;
+    margin-top: 40px;
   }
 `;
 
@@ -75,12 +75,8 @@ export const ResponsiveWrapper = styled.li`
       font-size: 16px;
     }
 
-    ${StyledMeta} {
-      font-size: 12px;
-    }
-
     ${PostDescription} {
-      font-size: 12px;
+      font-size: 13px;
       display: block;
       display: -webkit-box;
       -webkit-box-orient: vertical;

@@ -37,7 +37,7 @@ const ResponsiveWrapper = styled.div`
 
   @media ${VERY_SMALL_SCREEN} {
     ${Content} {
-      margin: 0 20px;
+      margin: -30px 20px;
     }
 
     ${Title} {
