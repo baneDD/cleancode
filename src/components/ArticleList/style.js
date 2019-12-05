@@ -10,6 +10,7 @@ import {
 } from '../../global/Theme';
 
 export const StyledTagCloud = styled(TagCloud)`
+  min-width: 100%;
   background-color: black;
   padding: 20px;
   border-radius: 10px;

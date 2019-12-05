@@ -4,6 +4,7 @@ import { graphql } from 'gatsby';
 import SocialBar from '../components/SocialBar';
 import Copyright from '../components/Copyright';
 import ImageCaption from '../components/ImageCaption';
+import ContactForm from '../components/ContactForm';
 import Layout from '../global/Layout';
 import Page from '../components/Page';
 
@@ -13,6 +14,7 @@ const renderAst = new RehypeReact({
     copyright: Copyright,
     social: SocialBar,
     'image-caption': ImageCaption,
+    'contact-form': ContactForm,
   },
 }).Compiler;
 
