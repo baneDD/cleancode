@@ -13,8 +13,8 @@ import {
   ButtonWrapper,
 } from './style';
 
-const siteRecaptchaKey = process.env.SITE_RECAPTCHA_KEY;
-console.log(siteRecaptchaKey);
+const siteRecaptchaKey = process.env.GATSBY_SITE_RECAPTCHA_KEY;
+console.log(siteRecaptchaKey || process.env.NODE_ENV);
 const encode = (data) => Object.keys(data)
     .map((key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
     .join('&');
