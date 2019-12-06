@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { navigate } from 'gatsby';
 import useForm from 'react-hook-form';
+import Recaptcha from 'react-google-recaptcha';
 import {
   Form,
   Label,
@@ -12,18 +13,21 @@ import {
   ButtonWrapper,
 } from './style';
 
+const siteRecaptchaKey = process.env.SITE_RECAPTCHA_KEY;
+
 const encode = (data) => Object.keys(data)
     .map((key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
     .join('&');
 
 const ContactForm = () => {
+  const [recaptchaValue, setRecaptchaValue] = useState(null);
   const { handleSubmit, register, errors, reset } = useForm();
   const requiredErrorMsg = (fieldName) => `⚠ ${fieldName} is required`;
-  const onSubmit = (values) => {
+  const submitForm = (values) => {
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({ 'form-name': 'contact', ...values }),
+      body: encode({ 'form-name': 'contact', ...values, ...recaptchaValue }),
     })
       .then(() => {
         reset();
@@ -32,9 +36,11 @@ const ContactForm = () => {
       .catch((error) => alert(error));
   };
 
+  const handleRecaptcha = (value) => setRecaptchaValue({ 'g-recaptcha-response': value });
+
   return (
     <Form
-      onSubmit={handleSubmit(onSubmit)}
+      onSubmit={handleSubmit(submitForm)}
       name="contact"
       method="post"
       action="thank-you"
@@ -120,7 +126,7 @@ const ContactForm = () => {
           ref={register({ required: true })}
         />
       </InputWrapper>
-      <div data-netlify-recaptcha="true"> </div>
+      <Recaptcha sitekey={siteRecaptchaKey} onChange={handleRecaptcha} />
       <ButtonWrapper>
         <Reset
           type="reset"
