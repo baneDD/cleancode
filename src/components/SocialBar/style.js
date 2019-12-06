@@ -27,6 +27,7 @@ const svgStyle = `
     transition: padding 0.25s linear, fill 0.25s ease;
 
     &:hover {
+        border-bottom: none;
         transition: padding 0.25s linear, fill 0.25s ease;
         padding: 0px;
         fill: #000;
