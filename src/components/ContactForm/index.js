@@ -120,7 +120,7 @@ const ContactForm = () => {
           ref={register({ required: true })}
         />
       </InputWrapper>
-      <div data-netlify-recaptcha="true"> </div>
+      <div netlify-recaptcha />
       <ButtonWrapper>
         <Reset
           type="reset"
