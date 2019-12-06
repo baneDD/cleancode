@@ -24,7 +24,10 @@ const ContactForm = () => {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({ 'form-name': 'contact', ...values }),
     })
-      .then(() => alert('Form submitted successfully!'))
+      .then(() => {
+        reset();
+        alert('Form submitted successfully!');
+      })
       .catch((error) => alert(error));
   };
 
@@ -33,7 +36,6 @@ const ContactForm = () => {
       onSubmit={handleSubmit(onSubmit)}
       netlify-honeypot="phone-number"
       data-netlify-recaptcha="true"
-      data-netlify="true"
     >
       {/* This is a bot field for Netlify honeypot */}
       <Input type="hidden" name="phone-number" />
