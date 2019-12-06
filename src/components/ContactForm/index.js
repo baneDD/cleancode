@@ -32,13 +32,9 @@ const ContactForm = () => {
   };
 
   return (
-    <Form
-      onSubmit={handleSubmit(onSubmit)}
-      netlify-honeypot="phone-number"
-      data-netlify-recaptcha="true"
-    >
+    <Form onSubmit={handleSubmit(onSubmit)}>
       {/* This is a bot field for Netlify honeypot */}
-      <Input type="hidden" name="phone-number" />
+      {/* <Input type="hidden" name="phone-number" /> */}
       {/* Below are the fields with data that we are collecting */}
       <InputWrapper>
         <Label htmlFor="name">Name:</Label>
@@ -112,7 +108,7 @@ const ContactForm = () => {
           ref={register({ required: true })}
         />
       </InputWrapper>
-      <div data-netlify-recaptcha="true" />
+      {/* <div data-netlify-recaptcha="true">&nbsp;</div> */}
       <ButtonWrapper>
         <Reset
           type="reset"
