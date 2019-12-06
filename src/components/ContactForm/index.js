@@ -14,7 +14,7 @@ import {
 } from './style';
 
 const siteRecaptchaKey = process.env.SITE_RECAPTCHA_KEY;
-
+console.log(siteRecaptchaKey);
 const encode = (data) => Object.keys(data)
     .map((key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
     .join('&');
@@ -126,7 +126,9 @@ const ContactForm = () => {
           ref={register({ required: true })}
         />
       </InputWrapper>
-      <Recaptcha sitekey={siteRecaptchaKey} onChange={handleRecaptcha} />
+      {siteRecaptchaKey && (
+        <Recaptcha sitekey={siteRecaptchaKey} onChange={handleRecaptcha} />
+      )}
       <ButtonWrapper>
         <Reset
           type="reset"
