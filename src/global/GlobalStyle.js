@@ -74,10 +74,6 @@ export default createGlobalStyle`
   }
 
   @media ${VERY_SMALL_SCREEN} {
-  h1 {
-    font-size: 20px;
-  }
-
   h2 {
     font-size: 19px;
   }

@@ -31,7 +31,7 @@ const ContactForm = () => {
     })
       .then(() => {
         reset();
-        navigate('/thank-you');
+        navigate('/thanks');
       })
       .catch((error) => alert(error));
   };
@@ -43,7 +43,7 @@ const ContactForm = () => {
       onSubmit={handleSubmit(submitForm)}
       name="contact"
       method="post"
-      action="thank-you"
+      action="thanks"
       data-netlify="true"
       data-netlify-recaptcha="true"
       netlify-honeypot="phone-number"

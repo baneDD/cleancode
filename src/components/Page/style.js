@@ -44,7 +44,7 @@ const ResponsiveWrapper = styled.div`
       text-align: left;
       margin-right: 0;
       width: calc(100% - 68px);
-      top: -8px;
+      top: -13px;
       left: 68px;
     }
 
