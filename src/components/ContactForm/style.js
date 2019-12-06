@@ -8,6 +8,8 @@ import {
 } from '../../global/Theme';
 
 const CommonStyle = `
+  display: inline-block;
+  margin: 10px auto !important;
   box-sizing: border-box;
   border-radius: 7px;
   border: 1px solid ${LIGHT_GREY};
@@ -93,10 +95,6 @@ export const Reset = styled.input`
   }
 `;
 
-export const InputWrapper = styled.div`
-  margin: 10px 0;
-`;
-
 export const ButtonWrapper = styled.div`
   margin: 0 auto;
 `;
@@ -151,11 +149,7 @@ export const Form = styled.form`
 
   @media ${VERY_SMALL_SCREEN} {
     ${Input}, ${Textarea} {
-      width: 260px;
-    }
-
-    ${InputWrapper} {
-      margin: 10px;
+      width: 100%;
     }
 
     ${Label} {
