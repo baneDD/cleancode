@@ -32,7 +32,7 @@ const ContactForm = () => {
   };
 
   return (
-    <Form onSubmit={handleSubmit(onSubmit)}>
+    <Form onSubmit={handleSubmit(onSubmit)} data-netlify="true">
       {/* This is a bot field for Netlify honeypot */}
       {/* <Input type="hidden" name="phone-number" /> */}
       {/* Below are the fields with data that we are collecting */}
