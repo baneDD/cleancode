@@ -61,7 +61,7 @@ export const Label = styled.label`
 `;
 
 export const Input = styled.input`
-  width: 400px;
+  width: 500px;
   height: 30px;
   ${CommonInputStyle}
   ${CommonErrorStyle}
@@ -69,7 +69,7 @@ export const Input = styled.input`
 
 export const Textarea = styled.textarea`
   vertical-align: top;
-  width: 400px;
+  width: 500px;
   height: 104px;
   ${CommonInputStyle}
   ${CommonErrorStyle}

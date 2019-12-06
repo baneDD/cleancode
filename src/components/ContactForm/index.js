@@ -11,17 +11,30 @@ import {
   ButtonWrapper,
 } from './style';
 
+const encode = (data) => Object.keys(data)
+    .map((key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
+    .join('&');
+
 const ContactForm = () => {
   const { handleSubmit, register, errors, reset } = useForm();
   const requiredErrorMsg = (fieldName) => `⚠ ${fieldName} is required`;
   const onSubmit = (values) => {
-    console.log(values);
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({ 'form-name': 'contact', ...values }),
+    })
+      .then(() => alert('Form submitted successfully!'))
+      .catch((error) => alert(error));
   };
 
-  /* <Form method="post" netlify-honeypot="phone-number" data-netlify="true"> */
-
   return (
-    <Form onSubmit={handleSubmit(onSubmit)}>
+    <Form
+      onSubmit={handleSubmit(onSubmit)}
+      netlify-honeypot="phone-number"
+      data-netlify-recaptcha="true"
+      data-netlify="true"
+    >
       {/* This is a bot field for Netlify honeypot */}
       <Input type="hidden" name="phone-number" />
       {/* Below are the fields with data that we are collecting */}
