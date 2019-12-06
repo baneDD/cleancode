@@ -60,6 +60,12 @@ export const Label = styled.label`
   width: 1px;
 `;
 
+export const RecaptchaWrapper = styled.div`
+  div {
+    margin: 10px auto;
+  }
+`;
+
 export const Input = styled.input`
   width: 500px;
   height: 30px;
