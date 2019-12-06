@@ -1,4 +1,5 @@
 import React from 'react';
+import { navigate } from 'gatsby';
 import useForm from 'react-hook-form';
 import {
   Form,
@@ -26,7 +27,7 @@ const ContactForm = () => {
     })
       .then(() => {
         reset();
-        alert('Form submitted successfully!');
+        navigate('/thank-you');
       })
       .catch((error) => alert(error));
   };
@@ -36,6 +37,7 @@ const ContactForm = () => {
       onSubmit={handleSubmit(onSubmit)}
       name="contact"
       method="post"
+      action="thank-you"
       data-netlify="true"
       data-netlify-recaptcha="true"
       netlify-honeypot="phone-number"
