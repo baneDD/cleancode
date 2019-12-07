@@ -14,7 +14,7 @@ const CommonStyle = `
   border-radius: 7px;
   border: 1px solid ${LIGHT_GREY};
   font-style: ${SANS};
-  font-size: 16px;
+  font-size: 1em;
   padding: 5px;
 `;
 
@@ -103,6 +103,7 @@ export const Form = styled.form`
   text-align: center;
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
 
   button,
   input,

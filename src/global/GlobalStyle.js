@@ -2,6 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset-advanced';
 import {
   MEDIUM_GREY,
+  DARK_GREY,
   BLACK,
   GREEN,
   SANS,
@@ -29,18 +30,18 @@ export default createGlobalStyle`
   }
 
   h1 {
-    font-size: 28px;
+    font-size: 1.75em;
     color: ${MEDIUM_GREY};
   }
 
   h2 {
-    font-size: 24px;
+    font-size: 1.5;
     color: ${MEDIUM_GREY};
     text-transform: uppercase;
   }
 
   h3 {
-    font-size: 20px;
+    font-size: 1.25em;
     color: ${MEDIUM_GREY};
     text-transform: uppercase;
   }
@@ -54,7 +55,10 @@ export default createGlobalStyle`
   p {
     line-height: 1.5em;
     font-family: ${SERIF};
-    font-size: 21px;
+    font-weight: 100;
+    font-size: 1em;
+    color: ${DARK_GREY};
+    -webkit-font-smoothing: antialiased;
   }
 
   a {
@@ -71,18 +75,5 @@ export default createGlobalStyle`
 
   img {
     max-width: 100%;
-  }
-
-  @media ${VERY_SMALL_SCREEN} {
-  h2 {
-    font-size: 19px;
-  }
-
-  h3 {
-    font-size: 18px
-  }
-
-  p {
-    font-size: 18px;
   }
 `;

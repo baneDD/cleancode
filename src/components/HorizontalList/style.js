@@ -30,7 +30,7 @@ export const Item = styled.li`
 export const ResponsiveWrapper = styled.div`
   display: table; /* Allow the centering to work */
   margin: 0 auto;
-  font-size: 14px;
+  font-size: 0.875em;
   color: ${LIGHT_GREY};
   margin-top: 12px;
   letter-spacing: 10px;

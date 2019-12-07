@@ -43,7 +43,7 @@ export const MenuList = styled.ul`
 
 export const MenuItem = styled.li`
   padding: 10px 0;
-  font-size: 24px;
+  font-size: 1.5em;
 `;
 
 export const ResponsiveWrapper = styled.div`

@@ -13,7 +13,7 @@ draft: false
 
 <style>
 .my-image {
-    margin: 30px 0 0 30px;
+    margin: 30px 0 30px 30px;
     float: right;
 }
 
@@ -34,6 +34,7 @@ draft: false
     border-radius: 50% !important;
 }
 </style>
+
 <wrapped-image className="my-image" src="bane.jpg" alt="Bane Debeljević"></wrapped-image>
 
 I'm a web developer based out of Toronto focused on engaging, fun and innovative online experiences. Dedicated to crafting clean, readable, modular and performant code. While I can work solo, I thrive in team environments where I can make a contribution beyond just writing code. Working on system architecture, improving processes and mentoring and coaching more junior engineers is an enormously satisfying part of working within a team constuct. I love to learn new things and continuously improve my craft.
@@ -45,6 +46,7 @@ If you want to work with me or simply want to get in touch and learn more, pleas
 Bane Debeljević
 
 <br></br>
+
 <style>
  img.gatsby-resp-image-image, span.gatsby-resp-image-background-image {
      border-radius: 10px;
@@ -64,7 +66,7 @@ Bane Debeljević
 
 </span>
 
-This site is built using Gatsby and Netlify CMS. 
+This site is built using Gatsby and Netlify CMS.
 
 <style>
   .no-border > p {

@@ -49,13 +49,12 @@ export const PostDescriptionWrapper = styled.div`
 export const PostDescription = styled.p`
   margin: 10px 0 0;
   font-family: ${SANS};
-  font-size: 16px;
   color: white;
 `;
 
 export const PostLink = styled(Link)`
   color: ${GREEN};
-  font-size: 22px;
+  font-size: 1.35em;
   border-bottom: none;
   font-weight: bold;
   letter-spacing: 2px;
@@ -72,11 +71,11 @@ export const ResponsiveWrapper = styled.li`
 
   @media ${VERY_SMALL_SCREEN}, ${MOBILE_DEVICE} {
     ${PostLink} {
-      font-size: 16px;
+      font-size: 1em;
     }
 
     ${PostDescription} {
-      font-size: 13px;
+      font-size: 0.8em;
       display: block;
       display: -webkit-box;
       -webkit-box-orient: vertical;

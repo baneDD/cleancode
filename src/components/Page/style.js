@@ -4,12 +4,11 @@ import { SMALL_SCREEN, VERY_SMALL_SCREEN } from '../../global/Theme';
 const NavBar = styled.div`
   position: relative;
   display: block;
-  height: 88px;
 `;
 
 const Title = styled.h1`
   display: inline-block;
-  position: absolute;
+  position: relative;
   left: 112px;
   top: 16px;
   margin-right: 112px;
@@ -46,10 +45,6 @@ const ResponsiveWrapper = styled.div`
       width: calc(100% - 68px);
       top: -13px;
       left: 68px;
-    }
-
-    ${NavBar} {
-      height: 58px;
     }
   }
 `;
