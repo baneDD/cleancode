@@ -48,13 +48,13 @@ const NavMenu = () => {
             <MenuLink to="/">Home</MenuLink>
           </MenuItem>
           <MenuItem>
-            <MenuLink to="/info">Info</MenuLink>
+            <MenuLink to="/info/">Info</MenuLink>
           </MenuItem>
           <MenuItem>
-            <MenuLink to="/posts">Posts</MenuLink>
+            <MenuLink to="/posts/">Posts</MenuLink>
           </MenuItem>
           <MenuItem>
-            <MenuLink to="/contact">Contact</MenuLink>
+            <MenuLink to="/contact/">Contact</MenuLink>
           </MenuItem>
         </MenuList>
       </ResponsiveWrapper>
