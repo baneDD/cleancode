@@ -8,7 +8,7 @@ const StyledWrapper = styled.div`
   }
 
   .gatsby-resp-image-wrapper {
-    margin-top: 40px;
+    margin-top: 30px;
 
     a {
       border-bottom: none;

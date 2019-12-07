@@ -66,7 +66,7 @@ export const ResponsiveWrapper = styled.div`
 
     ${MenuList} {
       &.open {
-        top: -56px;
+        top: -44px;
         left: -16px;
         padding: 16px;
         padding-top: 55px;

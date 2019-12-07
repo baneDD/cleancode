@@ -20,7 +20,7 @@ const Title = styled.h1`
 
 const Content = styled.div`
   display: inline-block;
-  width: 100%;
+  width: calc(100% - 100px);
   max-width: 1000px;
   margin: 0 auto;
 `;

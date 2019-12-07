@@ -47,7 +47,7 @@ const ArticleList = ({ data, pageContext, pageTitle, pageDescription }) => {
             onClick={(tag) => navigate(`/tag/${_.kebabCase(tag.value)}`)}
           />
         )}
-        <ListOfPosts>
+        <ListOfPosts hasTagCloud={data.tags && data.tags.group}>
           {edges.map((edge) => (
             <ResponsiveWrapper key={edge.node.frontmatter.title}>
               <PostLink to={`/posts/${edge.node.frontmatter.slug}/`}>

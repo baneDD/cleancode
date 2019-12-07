@@ -16,19 +16,23 @@ export const StyledTagCloud = styled(TagCloud)`
   padding: 20px;
   border-radius: 10px;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 30px;
 
   .simple-cloud .tag-cloud-tag {
     cursor: pointer;
   }
 
-  @media ${VERY_SMALL_SCREEN}, ${MOBILE_DEVICE} {
+  @media ${VERY_SMALL_SCREEN} {
     min-width: 280px;
   }
 `;
 
 export const ListOfPosts = styled.ul`
-  margin-top: 20px;
+  margin-top: ${(props) => (props.hasTagCloud ? '40px' : '30px')};
+
+  @media ${VERY_SMALL_SCREEN} {
+    margin-top: 30px;
+  }
 `;
 
 export const StyledMeta = styled(Meta)`
@@ -61,7 +65,7 @@ export const PostLink = styled(Link)`
 
 export const ResponsiveWrapper = styled.li`
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 
   img {
     border-radius: 10px;
@@ -86,5 +90,9 @@ export const ResponsiveWrapper = styled.li`
       -webkit-line-clamp: 2;
       height: calc(1em * 1.2 * 2);
     }
+  }
+
+  @media ${VERY_SMALL_SCREEN} {
+    margin-bottom: 30px;
   }
 `;
