@@ -7,7 +7,7 @@ draft: false
 
 <span id="about-me">
 
-### About me • [About cleancode.ca](/info#site)
+### About me • [About cleancode.ca](/info#about-cleancode)
 
 </span>
 
@@ -60,7 +60,7 @@ Bane Debeljević
 
 <image-caption>Photo by <a href="https://unsplash.com/@juanster">Juan Davila</a> on <a href="https://unsplash.com">Unsplash</a></image-caption>
 
-<span id="site">
+<span id="about-cleancode">
 
 ### About Cleancode.ca • [About me](/info#about-me)
 
