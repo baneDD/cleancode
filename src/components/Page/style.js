@@ -25,6 +25,8 @@ const Content = styled.div`
 
 const ResponsiveWrapper = styled.div`
   position: relative;
+  height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
 

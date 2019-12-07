@@ -29,6 +29,7 @@ const Layout = ({ title, description, children }) => (
             name="apple-mobile-web-app-status-bar-style"
             content="default"
           />
+          <html lang="en" />
         </Helmet>
         <GlobalStyle />
         <>{children}</>

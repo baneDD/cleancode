@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { LIGHT_GREY, VERY_SMALL_SCREEN } from '../../global/Theme';
+import { MEDIUM_GREY, VERY_SMALL_SCREEN } from '../../global/Theme';
 
 export const ItemList = styled.ul`
   list-style-type: none;
@@ -31,7 +31,7 @@ export const ResponsiveWrapper = styled.div`
   display: table; /* Allow the centering to work */
   margin: 0 auto;
   font-size: 0.875em;
-  color: ${LIGHT_GREY};
+  color: ${MEDIUM_GREY};
   margin-top: 12px;
   letter-spacing: 10px;
   text-transform: uppercase;

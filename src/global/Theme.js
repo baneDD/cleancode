@@ -16,5 +16,5 @@ export const MONO = "'Anonymous Pro', monospace";
 
 // Media queries
 export const SMALL_SCREEN = 'all and (max-width: 1100px)';
-export const VERY_SMALL_SCREEN = 'all and (max-width: 650px)';
+export const VERY_SMALL_SCREEN = 'all and (max-width: 660px)';
 export const MOBILE_DEVICE = 'only screen and (max-width : 900px)';
