@@ -4,13 +4,14 @@ import { SMALL_SCREEN, VERY_SMALL_SCREEN } from '../../global/Theme';
 const NavBar = styled.div`
   position: relative;
   display: block;
+  margin-bottom: 20px;
 `;
 
 const Title = styled.h1`
   display: inline-block;
   position: relative;
   left: 112px;
-  top: 16px;
+  top: -5px;
   margin-right: 112px;
   width: calc(100% - 224px);
   text-align: center;
@@ -39,6 +40,10 @@ const ResponsiveWrapper = styled.div`
   @media ${VERY_SMALL_SCREEN} {
     ${Content} {
       margin: -30px 20px;
+    }
+
+    ${NavBar} {
+      margin-bottom: 0px;
     }
 
     ${Title} {

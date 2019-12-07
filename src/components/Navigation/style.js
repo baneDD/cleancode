@@ -48,7 +48,7 @@ export const MenuItem = styled.li`
 
 export const ResponsiveWrapper = styled.div`
   display: block;
-  position: absolute;
+  position: relative;
   top: 50px;
   left: 50px;
 

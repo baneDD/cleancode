@@ -7,7 +7,7 @@ import { DARK_GREY, SANS, VERY_SMALL_SCREEN } from '../global/Theme';
 
 const HomeWrapper = styled.div`
   width: calc(100vw - 100px);
-  height: 100vh;
+  height: calc(100vh - 80px);
   display: flex;
   flex-direction: column;
   justify-content: center;
