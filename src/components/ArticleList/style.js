@@ -16,7 +16,7 @@ export const StyledTagCloud = styled(TagCloud)`
   padding: 20px;
   border-radius: 10px;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
 
   .simple-cloud .tag-cloud-tag {
     cursor: pointer;
@@ -24,7 +24,6 @@ export const StyledTagCloud = styled(TagCloud)`
 
   @media ${VERY_SMALL_SCREEN}, ${MOBILE_DEVICE} {
     min-width: 280px;
-    margin-top: 40px;
   }
 `;
 

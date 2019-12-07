@@ -29,6 +29,10 @@ export default createGlobalStyle`
     margin-top: 30px;
   }
 
+  .top-el > h1,h2,h3,h4,h5,h6,ul,p {
+    margin-top: 20px;
+  }
+
   h1 {
     font-size: 1.75em;
     color: ${MEDIUM_GREY};

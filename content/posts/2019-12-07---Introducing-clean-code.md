@@ -7,7 +7,7 @@ slug: 'introducing-clean-code/'
 category: 'Software Development'
 tags:
   - 'Coding'
-  - 'Style Guide'
+  - 'StyleGuide'
 description: 'Welcome to CleanCode.ca, my personal blog. In this opening post we delve into the motivation behind the blog name and my journey into technology.'
 socialImage: '/media/cleancode.jpg'
 ---

@@ -20,6 +20,7 @@ const Title = styled.h1`
 
 const Content = styled.div`
   display: inline-block;
+  width: 100%;
   max-width: 1000px;
   margin: 0 auto;
 `;
@@ -39,7 +40,8 @@ const ResponsiveWrapper = styled.div`
 
   @media ${VERY_SMALL_SCREEN} {
     ${Content} {
-      margin: -30px 20px;
+      margin: 0 20px;
+      width: calc(100% - 40px);
     }
 
     ${NavBar} {
@@ -49,8 +51,8 @@ const ResponsiveWrapper = styled.div`
     ${Title} {
       text-align: left;
       margin-right: 0;
+      margin-top: 0;
       width: calc(100% - 68px);
-      top: -13px;
       left: 68px;
     }
   }

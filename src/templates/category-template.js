@@ -4,7 +4,7 @@ import ArticleList from '../components/ArticleList';
 
 const CategoryTemplate = ({ data, pageContext }) => {
   const { category } = pageContext;
-  const pageTitle = `posts on "${category}"`;
+  const pageTitle = category;
 
   return (
     <ArticleList

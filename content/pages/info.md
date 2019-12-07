@@ -5,7 +5,7 @@ slug: /info/
 draft: false
 ---
 
-<span id="about-me">
+<span id="about-me" class="top-el">
 
 ### About me • [About cleancode.ca](/info#site)
 

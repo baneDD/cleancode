@@ -4,7 +4,7 @@ import ArticleList from '../components/ArticleList';
 
 const TagTemplate = ({ data, pageContext }) => {
   const { tag } = pageContext;
-  const pageTitle = `posts tagged "${tag}"`;
+  const pageTitle = `#${tag}`;
 
   return (
     <ArticleList
