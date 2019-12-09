@@ -10,7 +10,6 @@ import {
   SANS_URL,
   SERIF_URL,
   MONO_URL,
-  VERY_SMALL_SCREEN,
 } from './Theme';
 
 export default createGlobalStyle`

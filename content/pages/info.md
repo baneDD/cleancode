@@ -7,7 +7,7 @@ draft: false
 
 <span id="about-me">
 
-### About me • [About cleancode.ca](/info#about-cleancode)
+### About me • [About cleancode.ca](#about-cleancode)
 
 </span>
 
@@ -62,7 +62,7 @@ Bane Debeljević
 
 <span id="about-cleancode">
 
-### About Cleancode.ca • [About me](/info#about-me)
+### About Cleancode.ca • [About me](#about-me)
 
 </span>
 
