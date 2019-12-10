@@ -12,6 +12,9 @@ import {
   MONO_URL,
 } from './Theme';
 
+const PenSvg =
+  '<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"><path d="M7.127 22.562l-7.127 1.438 1.438-7.128 5.689 5.69zm1.414-1.414l11.228-11.225-5.69-5.692-11.227 11.227 5.689 5.69zm9.768-21.148l-2.816 2.817 5.691 5.691 2.816-2.819-5.691-5.689z" fill="rgb(144,144,144)"/></svg>';
+
 export default createGlobalStyle`
   ${reset};
 
@@ -78,21 +81,27 @@ export default createGlobalStyle`
 
   blockquote {
     margin-top: 30px;
-    font-style: italic;
-    padding: 0 20px 20px;
+    padding: 0 10px 10px;
     background: #eee;
     border-radius: 10px;
 
     p {
       margin-top: 0;
-      padding-top: 20px;
+      padding-top: 10px;
+      text-align: center;
+      font-family: ${SANS};
+      font-style: italic;
+      font-size: 1.2em;
     }
 
     p:last-child {
-      text-align: right;
-    
+      font-size: 1em;
+      margin-top: 0;
+      padding-top: 7px;
+      
       &:before {
-      content: '- ';
+      content: url('data:image/svg+xml;charset=UTF-8, ${PenSvg}');
+      margin-right: 5px;
     }
     }
   }
