@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Calendar, Clock } from '../../../assets/images';
 import {
   LIGHT_GREY,
   VERY_SMALL_SCREEN,
@@ -16,4 +17,17 @@ const Paragraph = styled.p`
   }
 `;
 
-export default Paragraph;
+const CommonSvgStyle = `
+  margin-right: 5px;
+  margin-bottom: -2px;
+`;
+
+const StyledCalendar = styled(Calendar)`
+  ${CommonSvgStyle}
+`;
+
+const StyledClock = styled(Clock)`
+  ${CommonSvgStyle}
+`;
+
+export { Paragraph, StyledCalendar as Calendar, StyledClock as Clock };
