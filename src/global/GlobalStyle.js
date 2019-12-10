@@ -79,7 +79,7 @@ export default createGlobalStyle`
   .gatsby-highlight {
   background-color: #1d1f21;
   border-radius: 0.3em;
-  margin: 0.5em 0;
+  margin: 30px 0 0;
   padding: 1em;
   overflow: auto;
 }
