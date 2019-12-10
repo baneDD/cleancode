@@ -12,6 +12,10 @@ description: 'Welcome to CleanCode.ca, my personal blog. In this opening post we
 socialImage: '/media/cleancode.jpg'
 ---
 
+> As I review the events of my past life I realize how subtle are the influences that shape our destinies.
+>
+> Nikola Tesla
+
 Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum.
 
 ![CleanCode by Robert C. Martin](/media/cleancode.jpg)

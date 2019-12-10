@@ -76,6 +76,27 @@ export default createGlobalStyle`
     max-width: 100%;
   }
 
+  blockquote {
+    margin-top: 30px;
+    font-style: italic;
+    padding: 0 20px 20px;
+    background: #eee;
+    border-radius: 10px;
+
+    p {
+      margin-top: 0;
+      padding-top: 20px;
+    }
+
+    p:last-child {
+      text-align: right;
+    
+      &:before {
+      content: '- ';
+    }
+    }
+  }
+
   .gatsby-highlight {
   background-color: #1d1f21;
   border-radius: 0.3em;
