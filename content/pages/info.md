@@ -84,6 +84,7 @@ This site is built using Gatsby and Netlify CMS.
 <span class="no-border">
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/06c990f4-cbed-46b3-b117-cae450d4e3db/deploy-status)](https://app.netlify.com/sites/cleancode-ca/deploys)
+[![codecov](https://codecov.io/gh/baneDD/cleancode/branch/master/graph/badge.svg?token=6JXBiFZvak)](https://codecov.io/gh/baneDD/cleancode)
 
 </span>
 

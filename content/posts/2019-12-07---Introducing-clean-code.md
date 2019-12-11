@@ -12,6 +12,8 @@ description: 'Welcome to CleanCode.ca, my personal blog. In this opening post we
 socialImage: '/media/cleancode.jpg'
 ---
 
+Welcome to my little corner of the internet here at [cleancode.ca](http://www.cleancode.ca). This site is a work in progress so please excuse the mess. These posts are simple test posts used to test out various features of the blog as I implement them. They will be replaced with real content shortly as I'm nearing feature completion.
+
 > As I review the events of my past life I realize how subtle are the influences that shape our destinies.
 >
 > Nikola Tesla
