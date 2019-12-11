@@ -11,10 +11,6 @@ import {
   FONTS_URL,
 } from './Theme';
 
-const PenSvg =  '<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"><path d="M7.127 22.562l-7.127 1.438 1.438-7.128 5.689 5.69zm1.414-1.414l11.228-11.225-5.69-5.692-11.227 11.227 5.689 5.69zm9.768-21.148l-2.816 2.817 5.691 5.691 2.816-2.819-5.691-5.689z" fill="rgb(144,144,144)"/></svg>';
-
-const QuoteSvg =  '<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"><path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z" fill="rgb(144,144,144)"/></svg>';
-
 export default createGlobalStyle`
   ${reset};
 
@@ -110,17 +106,22 @@ export default createGlobalStyle`
     }
   }
 
-  .gatsby-highlight {
-  background-color: #1d262f;
-  border-radius: 0.3em;
-  margin: 30px 0 0;
-  padding: 1em;
-  overflow: auto;
-}
+  :not(pre) > code[class*="language-"] {
+    padding: .3em .3em .15em;
+    color: #999;
+  }
 
-.gatsby-highlight pre[class*="language-"].line-numbers {
-  padding: 0;
-  padding-left: 2.8em;
-  overflow: initial;
-}
+  .gatsby-highlight {
+    background-color: #1d262f;
+    border-radius: 0.3em;
+    margin: 30px 0 0;
+    padding: 1em;
+    overflow: auto;
+  }
+
+  .gatsby-highlight pre[class*="language-"].line-numbers {
+    padding: 0;
+    padding-left: 2.8em;
+    overflow: initial;
+  }
 `;
