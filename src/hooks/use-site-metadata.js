@@ -21,6 +21,11 @@ const useSiteMetadata = () => {
               }
             }
             disqusShortname
+            postsPerPage
+            menuLinks {
+              name
+              link
+            }
           }
         }
       }

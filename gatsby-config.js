@@ -16,6 +16,12 @@ module.exports = {
     },
     disqusShortname: '',
     postsPerPage: 10,
+    menuLinks: [
+      { name: 'home', link: '/' },
+      { name: 'blog', link: '/blog/' },
+      { name: 'about', link: '/about/' },
+      { name: 'contact', link: '/contact/' },
+    ],
   },
   plugins: [
     {

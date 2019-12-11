@@ -3,7 +3,7 @@ const path = require('path');
 const _ = require('lodash');
 const createCategoriesPages = require('./pagination/create-categories-pages.js');
 const createTagsPages = require('./pagination/create-tags-pages.js');
-const createPostsPages = require('./pagination/create-posts-pages.js');
+const createBlogPages = require('./pagination/create-blog-pages.js');
 
 const createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
@@ -16,8 +16,8 @@ const createPages = async ({ graphql, actions }) => {
 
   // // Posts list
   createPage({
-    path: '/posts',
-    component: path.resolve('./src/templates/posts-template.js'),
+    path: '/blog',
+    component: path.resolve('./src/templates/blog-template.js'),
   });
 
   // Tags list
@@ -69,7 +69,7 @@ const createPages = async ({ graphql, actions }) => {
       });
     } else if (_.get(edge, 'node.frontmatter.template') === 'post') {
       createPage({
-        path: `/posts/${edge.node.fields.slug}`,
+        path: `/blog/${edge.node.fields.slug}`,
         component: path.resolve('./src/templates/post-template.js'),
         context: {
           slug: edge.node.fields.slug,
@@ -81,7 +81,7 @@ const createPages = async ({ graphql, actions }) => {
   // Feeds
   await createTagsPages(graphql, actions);
   await createCategoriesPages(graphql, actions);
-  await createPostsPages(graphql, actions);
+  await createBlogPages(graphql, actions);
 };
 
 module.exports = createPages;

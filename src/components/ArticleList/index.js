@@ -50,7 +50,7 @@ const ArticleList = ({ data, pageContext, pageTitle, pageDescription }) => {
         <ListOfPosts hasTagCloud={data.tags && data.tags.group}>
           {edges.map((edge) => (
             <ResponsiveWrapper key={edge.node.frontmatter.title}>
-              <PostLink to={`/posts/${edge.node.frontmatter.slug}/`}>
+              <PostLink to={`/blog/${edge.node.frontmatter.slug}/`}>
                 <Img
                   fluid={
                     edge.node.frontmatter.socialImage.childImageSharp.fluid

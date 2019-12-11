@@ -9,6 +9,7 @@ import {
 
 export const MenuLink = styled(Link)`
   text-decoration: none;
+  text-transform: capitalize;
   color: ${LIGHT_GREY};
 
   transition: color 0.3s ease;

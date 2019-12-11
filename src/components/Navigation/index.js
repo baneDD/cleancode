@@ -1,10 +1,12 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { useSiteMetadata } from '../../hooks';
 import MenuButton from './MenuButton';
 import { MenuLink, MenuItem, MenuList, ResponsiveWrapper } from './style';
 
 const NavMenu = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const node = useRef();
+  const { menuLinks } = useSiteMetadata();
 
   const onClickHandler = () => setMenuOpen((old) => !old);
   const getClassName = () => (menuOpen ? 'open' : '');
@@ -44,18 +46,11 @@ const NavMenu = () => {
           onClickHandler={onClickHandler}
         />
         <MenuList className={getClassName()}>
-          <MenuItem>
-            <MenuLink to="/">Home</MenuLink>
-          </MenuItem>
-          <MenuItem>
-            <MenuLink to="/about/">About</MenuLink>
-          </MenuItem>
-          <MenuItem>
-            <MenuLink to="/posts/">Posts</MenuLink>
-          </MenuItem>
-          <MenuItem>
-            <MenuLink to="/contact/">Contact</MenuLink>
-          </MenuItem>
+          {menuLinks.map((menuLink) => (
+            <MenuItem key={menuLink.name}>
+              <MenuLink to={menuLink.link}>{menuLink.name}</MenuLink>
+            </MenuItem>
+          ))}
         </MenuList>
       </ResponsiveWrapper>
     </nav>
