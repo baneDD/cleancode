@@ -7,15 +7,38 @@ const NavBar = styled.div`
   margin-bottom: 20px;
 `;
 
+const TitleCommon = `    
+    display: inline-block;
+    left: 112px;
+    margin-right: 112px;
+    width: calc(100% - 224px);`;
+
 const Title = styled.h1`
-  display: inline-block;
+  ${TitleCommon}
   position: relative;
-  left: 112px;
   top: -5px;
-  margin-right: 112px;
-  width: calc(100% - 224px);
   text-align: center;
-  text-transform: capitalize;
+  text-transform: uppercase;
+
+  :before {
+    content: '${(props) => props.title.length <= 40 && props.title}';
+    ${TitleCommon}
+    position: absolute;
+    top: 0.9em;
+    transform: scale(1, -1);
+    backface-visibility: visible; 
+    z-index: 1;   
+  }
+
+  :after {
+    content: '';
+    ${TitleCommon}
+    position: absolute;
+    top: 0.9em;
+    height: 1.5em; 
+    background-image: linear-gradient(to bottom, rgba(255,255,255, .6) 0%, rgba(255, 255, 255, 1) 50%);
+    z-index: 2;
+  }
 `;
 
 const Content = styled.div`
@@ -36,6 +59,15 @@ const ResponsiveWrapper = styled.div`
     ${Content} {
       margin: 0 50px;
     }
+
+    ${Title} {
+      :before,
+      :after {
+        content: '';
+        width: 0px;
+        height: 0px;
+      }
+    }
   }
 
   @media ${VERY_SMALL_SCREEN} {
@@ -54,6 +86,13 @@ const ResponsiveWrapper = styled.div`
       margin-top: 0;
       width: calc(100% - 68px);
       left: 68px;
+
+      :before,
+      :after {
+        content: '';
+        width: 0px;
+        height: 0px;
+      }
     }
   }
 `;

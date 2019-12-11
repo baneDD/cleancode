@@ -13,7 +13,7 @@ const Page = ({ title, children }) => {
     <ResponsiveWrapper ref={pageRef}>
       <NavBar>
         <Navigation />
-        {title && <Title>{title}</Title>}
+        {title && <Title title={title}>{title}</Title>}
       </NavBar>
       <Content>{children}</Content>
     </ResponsiveWrapper>

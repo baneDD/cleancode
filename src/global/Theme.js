@@ -7,12 +7,11 @@ export const BLACK = '#000';
 export const GREEN = '#76d7c4';
 
 // Theme fonts
-export const SERIF_URL =  'https://fonts.googleapis.com/css?family=Merriweather&display=swap';
-export const SANS_URL =  'https://fonts.googleapis.com/css?family=Oxygen&display=swap';
-export const MONO_URL =  'https://fonts.googleapis.com/css?family=Anonymous+Pro&display=swap';
+export const FONTS_URL =  'https://fonts.googleapis.com/css?family=Life+Savers|Anonymous+Pro|Merriweather|Oxygen&display=swap';
 export const SERIF = "'Merriweather', 'Georgia', serif";
 export const SANS = "'Oxygen', sans-serif";
 export const MONO = "'Anonymous Pro', monospace";
+export const CURSIVE = "'Life Savers', cursive";
 
 // Media queries
 export const SMALL_SCREEN = 'all and (max-width: 1100px)';
