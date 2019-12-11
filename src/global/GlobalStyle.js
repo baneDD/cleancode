@@ -111,7 +111,7 @@ export default createGlobalStyle`
   }
 
   .gatsby-highlight {
-  background-color: #1d1f21;
+  background-color: #1d262f;
   border-radius: 0.3em;
   margin: 30px 0 0;
   padding: 1em;
