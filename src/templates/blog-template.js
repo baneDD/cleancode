@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 import ArticleList from '../components/ArticleList';
 
 const PostsTemplate = ({ data, pageContext }) => (
-  <ArticleList data={data} pageContext={pageContext} pageTitle="all posts" />
+  <ArticleList data={data} pageContext={pageContext} pageTitle="All Posts" />
 );
 
 export const query = graphql`
