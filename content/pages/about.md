@@ -1,7 +1,7 @@
 ---
 template: page
-title: Info
-slug: /info/
+title: About
+slug: /about/
 draft: false
 ---
 
