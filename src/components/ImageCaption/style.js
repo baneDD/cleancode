@@ -1,15 +1,15 @@
 import styled from 'styled-components';
-import { VERY_SMALL_SCREEN } from '../../global/Theme';
+import { VERY_SMALL_SCREEN, SANS } from '../../global/Theme';
 
 const Wrapper = styled.p`
-  font-family: 'Oxygen', sans-serif;
-  font-size: 0.875em;
+  font-family: ${SANS};
+  font-size: 1em;
   text-align: right;
   margin-top: 3px;
   margin-right: 12px;
 
   @media ${VERY_SMALL_SCREEN} {
-    font-size: 0.75em;
+    font-size: 0.875em;
   }
 `;
 

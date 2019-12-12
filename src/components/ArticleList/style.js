@@ -37,6 +37,7 @@ export const ListOfPosts = styled.ul`
 
 export const StyledMeta = styled(Meta)`
   margin: 0;
+  font-size: 1em;
 `;
 
 export const PostDescriptionWrapper = styled.div`
@@ -53,14 +54,16 @@ export const PostDescription = styled.p`
   margin: 10px 0 0;
   font-family: ${SANS};
   color: white;
+  font-size: 1.125em;
 `;
 
 export const PostLink = styled(Link)`
-  color: ${GREEN};
-  font-size: 1.35em;
   border-bottom: none;
-  font-weight: bold;
-  letter-spacing: 2px;
+`;
+
+export const PostTitle = styled.h3`
+  margin-top: 0;
+  color: ${GREEN};
 `;
 
 export const ResponsiveWrapper = styled.li`
@@ -73,17 +76,21 @@ export const ResponsiveWrapper = styled.li`
   }
 
   @media ${VERY_SMALL_SCREEN}, ${MOBILE_DEVICE} {
-    ${PostLink} {
-      font-size: 1em;
+    ${PostTitle} {
+      font-size: 1.2em;
+    }
+
+    ${StyledMeta} {
+      font-size: 0.875em;
     }
 
     ${PostDescription} {
-      font-size: 0.8em;
+      font-size: 1em;
       display: block;
       display: -webkit-box;
       -webkit-box-orient: vertical;
       position: relative;
-      line-height: 1.2;
+      line-height: 1.3em;
       overflow: hidden;
       text-overflow: ellipsis;
       padding: 0 !important;

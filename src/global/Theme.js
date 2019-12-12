@@ -7,9 +7,8 @@ export const BLACK = '#000';
 export const GREEN = '#76d7c4';
 
 // Theme fonts
-export const FONTS_URL =  'https://fonts.googleapis.com/css?family=Life+Savers|Anonymous+Pro|Merriweather|Oxygen&display=swap';
-export const SERIF = "'Merriweather', 'Georgia', serif";
-export const SANS = "'Oxygen', sans-serif";
+export const FONTS_URL =  'https://fonts.googleapis.com/css?family=Life+Savers|Anonymous+Pro|Montserrat&display=swap';
+export const SANS = "'Montserrat', sans-serif";
 export const MONO = "'Anonymous Pro', monospace";
 export const CURSIVE = "'Life Savers', cursive";
 

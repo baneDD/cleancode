@@ -6,7 +6,6 @@ import {
   BLACK,
   GREEN,
   SANS,
-  SERIF,
   CURSIVE,
   FONTS_URL,
 } from './Theme';
@@ -26,18 +25,18 @@ export default createGlobalStyle`
   }
 
   h1 {
-    font-size: 1.75em;
+    font-size: 1.875em;
     color: ${MEDIUM_GREY};
   }
 
   h2 {
-    font-size: 1.5;
+    font-size: 1.625em;
     color: ${MEDIUM_GREY};
     text-transform: uppercase;
   }
 
   h3 {
-    font-size: 1.25em;
+    font-size: 1.375em;
     color: ${MEDIUM_GREY};
     text-transform: uppercase;
   }
@@ -49,16 +48,16 @@ export default createGlobalStyle`
   }
 
   p {
-    line-height: 1.5em;
-    font-family: ${SERIF};
+    line-height: 1.7em;
+    font-family: ${SANS};
     font-weight: 100;
-    font-size: 1em;
+    font-size: 1.125em;
     color: ${DARK_GREY};
     -webkit-font-smoothing: antialiased;
   }
 
   a {
-    line-height: 1.5em;
+    line-height: 1.7em;
     text-decoration: none;
     border-bottom: 1px solid ${GREEN};
     transition: border-bottom 0.5sec linear, font-weight 0.5sec linear;

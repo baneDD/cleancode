@@ -10,16 +10,16 @@ export const ItemList = styled.ul`
 
 export const Item = styled.li`
   float: left;
-  margin-left: 20px;
+  margin-left: 1em;
 
   &:before {
     display: inline;
     content: '\u2219';
-    margin-right: 20px;
+    margin-right: 1em;
   }
 
   &:first-child {
-    margin-left: 0px;
+    margin-left: 0;
 
     &:before {
       content: none;
@@ -32,15 +32,15 @@ export const ResponsiveWrapper = styled.div`
   margin: 0 auto;
   font-size: 0.875em;
   color: ${MEDIUM_GREY};
-  margin-top: 12px;
-  letter-spacing: 10px;
+  margin-top: 0.75em;
+  letter-spacing: 0.4em;
   text-transform: uppercase;
 
   @media ${VERY_SMALL_SCREEN} {
     ${Item} {
       float: initial;
       margin-left: 0px;
-      margin-top: 10px;
+      margin-top: 0.625em;
       text-align: center;
 
       &:before {

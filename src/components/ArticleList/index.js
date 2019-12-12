@@ -13,6 +13,7 @@ import {
   ListOfPosts,
   ResponsiveWrapper,
   PostDescriptionWrapper,
+  PostTitle,
   PostDescription,
   PostLink,
 } from './style';
@@ -36,13 +37,15 @@ const ArticleList = ({ data, pageContext, pageTitle, pageDescription }) => {
       <Page title={pageTitle || title}>
         {data.tags && data.tags.group && (
           <TagCloud
-            minSize={windowSize.width > 650 ? 21 : 14}
-            maxSize={windowSize.width > 650 ? 42 : 28}
+            minSize={windowSize.width > 650 ? 20 : 16}
+            maxSize={windowSize.width > 650 ? 40 : 24}
             colorOptions={tagCloudColorOptions}
             tags={data.tags.group}
             className="simple-cloud"
             style={{
               cursor: 'pointer',
+              lineHeight: windowSize.width > 650 ? '2.5em' : '1.7em',
+              padding: windowSize.width > 650 ? '1em' : '0.5em',
             }}
             onClick={(tag) => navigate(`/tag/${_.kebabCase(tag.value)}`)}
           />
@@ -58,7 +61,7 @@ const ArticleList = ({ data, pageContext, pageTitle, pageDescription }) => {
                   alt="blah"
                 />
                 <PostDescriptionWrapper>
-                  {`${edge.node.frontmatter.title}`}
+                  <PostTitle>{`${edge.node.frontmatter.title}`}</PostTitle>
                   <Meta node={edge.node} />
                   <PostDescription>
                     {edge.node.frontmatter.description}

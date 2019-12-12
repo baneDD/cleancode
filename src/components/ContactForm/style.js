@@ -14,8 +14,8 @@ const CommonStyle = `
   border-radius: 7px;
   border: 1px solid ${LIGHT_GREY};
   font-style: ${SANS};
-  font-size: 1em;
-  padding: 5px;
+  font-size: 1.125em;
+  padding: 0.7em;
 `;
 
 const CommonInputStyle = `
@@ -70,7 +70,7 @@ export const RecaptchaWrapper = styled.div`
 
 export const Input = styled.input`
   width: 500px;
-  height: 30px;
+  height: 2.3em;
   ${CommonInputStyle}
   ${CommonErrorStyle}
 `;

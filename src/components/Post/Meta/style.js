@@ -4,10 +4,11 @@ import {
   LIGHT_GREY,
   VERY_SMALL_SCREEN,
   MOBILE_DEVICE,
+  SANS,
 } from '../../../global/Theme';
 
 const Paragraph = styled.p`
-  font-family: 'Oxygen', sans-serif;
+  font-family: ${SANS};
   font-size: 0.875em;
   color: ${LIGHT_GREY};
   margin-top: 30px;
