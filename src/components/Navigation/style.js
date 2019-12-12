@@ -16,7 +16,6 @@ export const MenuLink = styled(Link)`
 
   &:hover {
     color: ${DARK_GREY};
-    letter-spacing: 1px;
   }
 `;
 
@@ -43,7 +42,6 @@ export const MenuList = styled.ul`
 `;
 
 export const MenuItem = styled.li`
-  padding: 10px 0;
   font-size: 1.5em;
 `;
 

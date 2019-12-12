@@ -60,11 +60,11 @@ export default createGlobalStyle`
     line-height: 1.7em;
     text-decoration: none;
     border-bottom: 1px solid ${GREEN};
-    transition: border-bottom 0.5sec linear, font-weight 0.5sec linear;
+    transition: border-bottom 0.5sec linear, text-shadow 0.5sec linear;
     &:hover {
-      font-weight: 900;
+      text-shadow: 0 0 1px ${BLACK};
       border-bottom: 2px solid ${GREEN};
-      transition: border-bottom 0.5sec linear, font-weight 0.5sec linear;
+      transition: border-bottom 0.5sec linear, text-shadow 0.5sec linear;
     }
   }
 
