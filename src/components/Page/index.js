@@ -6,7 +6,7 @@ const Page = ({ title, children }) => {
   const pageRef = useRef();
 
   useEffect(() => {
-    pageRef.current.scrollTo(0, 0);
+    pageRef.current.scrollTop = 0;
   });
 
   return (
