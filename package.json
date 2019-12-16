@@ -2,7 +2,7 @@
   "name": "cleancode",
   "description": "Cleancode.ca",
   "version": "1.0.0",
-  "author": "Bane Debeljević",
+  "author": "Bane Debeljević <bane.dd@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
