@@ -1,37 +1,12 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="./src/assets/images/cover.png" width="600" />
-  </a>
-</p>
-<h1 align="center">
-  GatsbyJS + Storybook Starter
-</h1>
-<p align="center">
-  Gatsby starter that uses Storybook + additional set of tools listed bellow, and provides an easy to start structure to get you up and running with your Gatsby powered site.
-</p>
+# Cleancode.ca
 
-##  What's inside?
+This repository is my personal blog. Originally forked from [Marko Radak's excellent Gatsby+Storybook starter] which gave me a fairly clean slate with Gatsby + Storybook to build upon. I then added Netlify CMS using [Alexander Shelepenok's Gatsby Lumen Starter](https://github.com/alxshelepenok/gatsby-starter-lumen) as a rough guide. I've also added a contact form using [Netlify Forms](https://www.netlify.com/products/forms/) with [Google Recaptcha](https://www.google.com/recaptcha/intro/v3.html), image optimization for both static pages and markdown-generated blog posts, blog tag cloud via [ReactTagcloud](https://www.npmjs.com/package/react-tagcloud) and styled codeblocks using [PrismJS](https://prismjs.com/).
 
-- Gatsby (v2)
-- Storybook (v5)
-- Styled Components (v4)
-- Styled Reset (Advanced)
-- Netlify Conf
-- Eslint
+In the future, I plan on adding unit testing with [Jest](https://jestjs.io/) as well as some end-to-end tests using [Cypress](https://www.cypress.io/). I also plan on adding fast site search via [Algolia](https://www.algolia.com/). Stay tuned for more updates to the blog!
 
-## Quick start
-```bash
-$ gatsby new my-awesome-site https://github.com/markoradak/gatsby-starter-storybook
-
-$ cd my-awesome-site
-$ yarn start || yarn develop
-```
-
-## Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/markoradak/gatsby-starter-storybook)
+Bane
 
 ## License
 
-Licensed under the MIT License, Copyright © 2018 Marko Radak.  
+Licensed under the MIT License, Copyright © 2019 Bane Debeljevic.  
 See [license](LICENSE) for more information.
