@@ -7,7 +7,9 @@ draft: false
 
 <span id="about-me">
 
-### About me • [About cleancode.ca](#about-cleancode)
+### About me
+
+→ Read [about this site](#about-cleancode)
 
 </span>
 
@@ -37,11 +39,15 @@ draft: false
 
 <wrapped-image className="my-image" src="bane.jpg" alt="Bane Debeljević"></wrapped-image>
 
-Hello, my name is Bane and I'm a Toronto-based web developer focused on creating engaging, fun and innovative online experiences. I love crafting clean, readable, modular and performant code. While I can work solo, I thrive in team environments where I can make a contribution beyond just writing code. Working on system architecture, improving processes and mentoring and coaching more junior engineers is an enormously satisfying part of working within a team constuct. I love to learn new things and continuously improve my craft.
+Hi there, my name is Bane and I am a Toronto-based software engineer. I love working on, architecting, leading and discussing software projects. My passion is code quality and I continuously strive to produce code that's clean, concise, readable, modular and performant. I love improving tools and processes around writing quality code and optimizing architecture for scalability, reliability and performance.
 
-I’ve worked with major online retailers in North America including leading teams at Indigo and iHerb and helped improve web experience for one of the most popular online video games on the planet. Starting at Ryerson University where I won a contest to redesign and implement a portal for School of Computer Science, I’ve spent nearly a decade and a half mastering the craft of creating joyful online experiences.
+Software engineering is a field where continuous learning is paramount in order to keep abreast of the new technologies, tools and methodologies. It has been demonstrated by [many studies](https://journals.sagepub.com/doi/abs/10.3102/00028312019002237) that teaching others deepens your own understanding of the subject and improves knowledge retention. With those benefits in mind, I created this blog intent on teaching some of the concepts in software I find challenging. Hopefully you will find it interesting and informative!
 
-If you want to work with me or simply want to get in touch and learn more, please [contact me](/contact/).
+> If you can't explain it simply you don't understand it well
+>
+> Albert Einstein
+
+If you have any suggestions on how to improve this site or would like to work with me on a sofware project, [drop me a note](/contact/).
 
 Bane Debeljević
 
@@ -62,7 +68,9 @@ Bane Debeljević
 
 <span id="about-cleancode">
 
-### About Cleancode.ca • [About me](#about-me)
+### About this site
+
+← Read [about me](#)
 
 </span>
 
