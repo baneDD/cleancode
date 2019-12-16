@@ -16,6 +16,8 @@ module.exports = {
     },
     disqusShortname: '',
     postsPerPage: 10,
+    postsGithubEditLink:
+      'https://github.com/baneDD/cleancode/edit/master/content/posts/',
     menuLinks: [
       { name: 'home', link: '/' },
       { name: 'blog', link: '/blog/' },

@@ -16,6 +16,7 @@ const renderAst = new RehypeReact({
 const Post = ({ post }) => {
   const { htmlAst } = post;
   const { slug, tags, title } = post.frontmatter;
+  const fileSegments = post.fileAbsolutePath.split('/');
 
   return (
     <Page title={title}>
@@ -29,10 +30,16 @@ const Post = ({ post }) => {
             maxSize={16}
           />
         )}
-        <Author />
+        <Author
+          filename={
+            fileSegments
+            && fileSegments.length
+            && fileSegments[fileSegments.length - 1]
+          }
+        />
       </div>
       <div>
-        <Comments postSlug={slug} postTitle={post.frontmatter.title} />
+        <Comments postSlug={slug} postTitle={title} />
       </div>
     </Page>
   );

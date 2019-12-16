@@ -4,15 +4,18 @@ import Container from './style';
 import SocialBar from '../../SocialBar';
 import Copyright from '../../Copyright';
 
-const Author = () => {
-  const {
-    author: { name },
-  } = useSiteMetadata();
+const Author = ({ filename }) => {
+  const { postsGithubEditLink } = useSiteMetadata();
 
   return (
     <Container>
       <SocialBar />
-      <Copyright />
+      <Copyright>
+        {' '}
+        {filename && postsGithubEditLink && (
+          <a href={`${postsGithubEditLink}${filename}`}>Edit post on Github</a>
+        )}
+      </Copyright>
     </Container>
   );
 };

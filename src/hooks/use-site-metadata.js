@@ -22,6 +22,7 @@ const useSiteMetadata = () => {
             }
             disqusShortname
             postsPerPage
+            postsGithubEditLink
             menuLinks {
               name
               link

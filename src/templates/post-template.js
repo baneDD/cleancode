@@ -16,8 +16,12 @@ const PostTemplate = ({ data }) => {
 
 export const query = graphql`
   query PostBySlug($slug: String!) {
-    post: markdownRemark(frontmatter: { slug: { eq: $slug } }) {
+    post: markdownRemark(
+      frontmatter: { slug: { eq: $slug } }
+      fileAbsolutePath: {}
+    ) {
       id
+      fileAbsolutePath
       htmlAst
       frontmatter {
         slug
