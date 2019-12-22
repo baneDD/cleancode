@@ -39,11 +39,11 @@ draft: false
 
 <wrapped-image className="my-image" src="bane.jpg" alt="Bane Debeljević"></wrapped-image>
 
-Hi there, my name is Bane and I am a Toronto-based software engineer. I love working on, architecting, leading and discussing software projects. My passion is code quality and I continuously strive to produce code that's clean, concise, readable, modular and performant. I love improving tools and processes around writing quality code and optimizing architecture for scalability, reliability and performance.
+Hi there, and welcome to my website! My name is Bane and I am a Toronto-based software development consultant. I have spent a better part of the last two decades working on, architecting, leading and discussing software projects. My passion for code quality means I continuously strive to produce code that's clean, concise, readable, modular and performant. I love improving tools and processes around writing quality code and optimizing architecture for scalability, reliability and performance.
 
-Software engineering is a field where continuous learning is paramount in order to keep abreast of the new technologies, tools and methodologies. It has been demonstrated by [many studies](https://journals.sagepub.com/doi/abs/10.3102/00028312019002237) that teaching others deepens your own understanding of the subject and improves knowledge retention. With those benefits in mind, I created this blog intent on teaching some of the concepts in software I find challenging. Hopefully you will find it interesting and informative!
+Software engineering is a field where continuous learning is paramount in order to keep abreast of the new technologies, tools and methodologies. It has been demonstrated by [many studies](https://journals.sagepub.com/doi/abs/10.3102/00028312019002237) that teaching others deepens your own understanding of the subject and improves knowledge retention. With those benefits in mind, I created this blog intent on disseminating some of the knowledge I've acquired over the years. Hopefully you will find it interesting and informative!
 
-> If you can't explain it simply you don't understand it well
+> If you can't explain it simply you don't understand it well.
 >
 > Albert Einstein
 
