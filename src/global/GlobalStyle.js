@@ -18,6 +18,7 @@ export default createGlobalStyle`
   body {
     font-family: ${SANS};
     color: ${BLACK};
+    overflow-x: hidden;
   }
 
   h1,h2,h3,h4,h5,h6,ul,p {
