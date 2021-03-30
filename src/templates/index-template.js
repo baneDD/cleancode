@@ -30,7 +30,7 @@ const IndexTemplate = () => (
     <Page>
       <HomeWrapper>
         <Heading>Bane Debeljević</Heading>
-        <HorizontalList items={['Developer', 'Architect', 'Leader']} />
+        <HorizontalList items={['Engineer', 'Architect', 'Leader']} />
       </HomeWrapper>
     </Page>
   </Layout>

@@ -5,7 +5,7 @@ module.exports = {
     description: "CleanCode.ca - Bane Debeljević's Personal Website",
     author: {
       name: 'Bane Debeljević',
-      bio: 'Developer • Architect • Leader',
+      bio: 'Engineer • Architect • Leader',
       social: {
         twitter: 'https://twitter.com/bane_dd',
         linkedin: 'https://www.linkedin.com/in/bane/',
