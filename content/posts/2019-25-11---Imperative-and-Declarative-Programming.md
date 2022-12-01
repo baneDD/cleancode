@@ -19,7 +19,7 @@ The two most commonly used software development paradigms are imperative and dec
 
 ![Photo by Phoenix Han on Unsplash](/media/pineapple.jpg) Photo by [Phoenix Han](https://unsplash.com/@@phienix_han) on [Unsplash](https://unsplash.com)
 
-The fundamental difference between these paradigms lies in the level of abstraction that they provide. Where imperative programming is concerned with specifying exactlyhowto achieve a desired outcome, declarative programming allows the programmer to focus onwhatthey want to achieve. The declarative style is a higher level of abstraction and is more suited to higher-level tasks such as modeling a system, while imperative programming is more suited to low level tasks such as task automation.
+The fundamental difference between these paradigms lies in the level of abstraction that they provide. Where imperative programming is concerned with specifying exactly _how_ to achieve a desired outcome, declarative programming allows the programmer to focus on _what_ they want to achieve. The declarative style is a higher level of abstraction and is more suited to higher-level tasks such as modeling a system, while imperative programming is more suited to low level tasks such as task automation.
 
 <br/>
 <br/>
