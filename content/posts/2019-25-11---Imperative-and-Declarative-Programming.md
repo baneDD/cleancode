@@ -36,6 +36,7 @@ function sumOddNumbers(numbers) {
 
   return sum;
 }
+
 ```
 
 <br/> 
@@ -49,6 +50,7 @@ functionsumOddNumbers(numbers) {
   // Filter out even numbers and add the remaining numbers
   return numbers.filter(n=>n%2).reduce((a,b) => a+b,0);
 }
+
 ```
 
 <br/> 
